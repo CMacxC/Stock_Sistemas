@@ -1,0 +1,16 @@
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Stock_Sistemas.exe.config
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Stock_Sistemas.exe
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Stock_Sistemas.pdb
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.csproj.AssemblyReference.cache
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.Properties.Resources.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.csproj.GenerateResource.cache
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.csproj.CoreCompileInputs.cache
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.exe
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.pdb
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Principal.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.csproj.CopyComplete
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Existencias.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Materiales.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Movimientos.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Bunifu_UI_v1.5.3.dll
