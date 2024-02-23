@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Principal));
             this.pMenu = new System.Windows.Forms.Panel();
             this.btn_Opciones = new FontAwesome.Sharp.IconButton();
             this.btn_Materiales = new FontAwesome.Sharp.IconButton();
@@ -184,7 +183,6 @@
             // 
             // pbLogo
             // 
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
             this.pbLogo.Location = new System.Drawing.Point(12, 10);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(195, 48);
