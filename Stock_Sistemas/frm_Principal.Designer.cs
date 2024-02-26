@@ -56,7 +56,7 @@
             // 
             // pMenu
             // 
-            this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.pMenu.Controls.Add(this.btn_Opciones);
             this.pMenu.Controls.Add(this.btn_Materiales);
             this.pMenu.Controls.Add(this.btn_Movimientos);
@@ -193,7 +193,7 @@
             // 
             // pBar
             // 
-            this.pBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
+            this.pBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.pBar.Controls.Add(this.btn_Minimize);
             this.pBar.Controls.Add(this.btn_ResMax);
             this.pBar.Controls.Add(this.btn_Cerrar);
@@ -268,7 +268,7 @@
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(90)))));
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.Transparent;
             this.iconCurrentChildForm.ForeColor = System.Drawing.Color.DarkSalmon;
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.DarkSalmon;
@@ -281,7 +281,7 @@
             // 
             // pContainer
             // 
-            this.pContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(75)))));
+            this.pContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(173)))), ((int)(((byte)(214)))));
             this.pContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContainer.Location = new System.Drawing.Point(220, 100);
             this.pContainer.Name = "pContainer";

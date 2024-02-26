@@ -14,3 +14,5 @@ C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\S
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Materiales.resources
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Movimientos.resources
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Business_Layer.dll
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Business_Layer.pdb

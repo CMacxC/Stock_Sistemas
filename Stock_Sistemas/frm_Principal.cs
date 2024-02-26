@@ -79,7 +79,7 @@ namespace Stock_Sistemas
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(44, 62, 80);
+                currentBtn.BackColor = Color.FromArgb(29, 29, 29);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Gainsboro;
