@@ -50,11 +50,18 @@
     <Compile Include="Entidades\Detalle_Compras.cs" />
     <Compile Include="Entidades\Marca.cs" />
     <Compile Include="Entidades\Productos.cs" />
+    <Compile Include="Entidades\Reportes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entidades\Salidas.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess_Layer\DataAccess_Layer.csproj">
+      <Project>{1f92d939-3404-4381-b439-d0ba76a8e8e7}</Project>
+      <Name>DataAccess_Layer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

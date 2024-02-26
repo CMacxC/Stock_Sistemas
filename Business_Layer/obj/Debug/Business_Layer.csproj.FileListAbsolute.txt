@@ -7,3 +7,5 @@ C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\B
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\Business_Layer.csproj.CopyComplete
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\Business_Layer.dll
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\Business_Layer.pdb
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\DataAccess_Layer.dll
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\DataAccess_Layer.pdb

@@ -120,4 +120,30 @@
   <metadata name="Elipse_Form.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_ImprimirReporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAEvSURBVEhLYxieoP/0d4f+kz8bSMJAPVDthAFIw4RTP/+T
+        gkF6oNoJg6FtgaOjY0Nm2zyshuDDID0gvVBjMEF8fDxHYmJicnBw8Oz4ovoLhZPWPSAFg/SA9ILMyM3N
+        ZYcaiwBAibVA/J8aOCEhYTXUWAQASvxEV0gqtpuQ8d9+QiaI/RNqLAKgK6YUQ41FAGyKKMFQYxEAGEH/
+        qYmhxiKAk5PTf2piqLEIAJOwt7f/b2pq+t/ExIQkDNID0kvQAgsLi//Gqb3/nZZ+JQmD9ID04rQAmAt/
+        wiTJzckw/UCzfkCNRQCgxBpsFkiWXcKLQxc8xbAAiFdBjUUADw8PdqDNSUDcUTxzxxGYBcRikB6QXiBO
+        BJkFNRY7QC5NsbkahGEuh+HBU1yDAM2rzCEEGBgATFFnHiFjKckAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="stockBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 17</value>
+  </metadata>
+  <data name="btn_Cerrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAHxJREFUOE/N
+        ksENgCAQBCnJkuy/CWQYCA+8EPShmxBhd/bQxPQf5ZyPss52DAUD245DLUDhEDKRgCEwnwE8o8VbAsgN
+        kL3WotwFKF+fe+UuCvaq9sqIkt2qx7fvfwKg/Ciw11oMAZCbQTyjYAiBeXwLmcgNU8x3v/JHSukCOJHi
+        7U97ZyUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="Elipse_Close.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>293, 17</value>
+  </metadata>
 </root>
