@@ -43,3 +43,7 @@ C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\S
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Stimulsoft.Controls.Win.xml
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Stimulsoft.Report.Check.xml
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Stimulsoft.Report.Helper.xml
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Reportes.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Fondo.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_NuevoReporte.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_AgregarConsumible.resources

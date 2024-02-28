@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pMenu = new System.Windows.Forms.Panel();
-            this.btn_Opciones = new FontAwesome.Sharp.IconButton();
+            this.btn_Reportes = new FontAwesome.Sharp.IconButton();
             this.btn_Materiales = new FontAwesome.Sharp.IconButton();
             this.btn_Movimientos = new FontAwesome.Sharp.IconButton();
             this.btn_Existencias = new FontAwesome.Sharp.IconButton();
@@ -57,7 +57,7 @@
             // pMenu
             // 
             this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.pMenu.Controls.Add(this.btn_Opciones);
+            this.pMenu.Controls.Add(this.btn_Reportes);
             this.pMenu.Controls.Add(this.btn_Materiales);
             this.pMenu.Controls.Add(this.btn_Movimientos);
             this.pMenu.Controls.Add(this.btn_Existencias);
@@ -68,28 +68,28 @@
             this.pMenu.Size = new System.Drawing.Size(220, 499);
             this.pMenu.TabIndex = 0;
             // 
-            // btn_Opciones
+            // btn_Reportes
             // 
-            this.btn_Opciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Opciones.FlatAppearance.BorderSize = 0;
-            this.btn_Opciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Opciones.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Opciones.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Opciones.IconChar = FontAwesome.Sharp.IconChar.Sliders;
-            this.btn_Opciones.IconColor = System.Drawing.Color.Gainsboro;
-            this.btn_Opciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Opciones.IconSize = 32;
-            this.btn_Opciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Opciones.Location = new System.Drawing.Point(0, 290);
-            this.btn_Opciones.Name = "btn_Opciones";
-            this.btn_Opciones.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btn_Opciones.Size = new System.Drawing.Size(220, 50);
-            this.btn_Opciones.TabIndex = 4;
-            this.btn_Opciones.Text = "Opciones";
-            this.btn_Opciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Opciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Opciones.UseVisualStyleBackColor = true;
-            this.btn_Opciones.Click += new System.EventHandler(this.btn_Opciones_Click);
+            this.btn_Reportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Reportes.FlatAppearance.BorderSize = 0;
+            this.btn_Reportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Reportes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reportes.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Reportes.IconChar = FontAwesome.Sharp.IconChar.FileText;
+            this.btn_Reportes.IconColor = System.Drawing.Color.Gainsboro;
+            this.btn_Reportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_Reportes.IconSize = 32;
+            this.btn_Reportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Reportes.Location = new System.Drawing.Point(0, 290);
+            this.btn_Reportes.Name = "btn_Reportes";
+            this.btn_Reportes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btn_Reportes.Size = new System.Drawing.Size(220, 50);
+            this.btn_Reportes.TabIndex = 4;
+            this.btn_Reportes.Text = "Reportes";
+            this.btn_Reportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Reportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Reportes.UseVisualStyleBackColor = true;
+            this.btn_Reportes.Click += new System.EventHandler(this.btn_Reportes_Click);
             // 
             // btn_Materiales
             // 
@@ -330,7 +330,7 @@
         private System.Windows.Forms.Panel pContainer;
         private FontAwesome.Sharp.IconButton btn_Existencias;
         private System.Windows.Forms.Panel pLogo;
-        private FontAwesome.Sharp.IconButton btn_Opciones;
+        private FontAwesome.Sharp.IconButton btn_Reportes;
         private FontAwesome.Sharp.IconButton btn_Materiales;
         private FontAwesome.Sharp.IconButton btn_Movimientos;
         private System.Windows.Forms.PictureBox pbLogo;

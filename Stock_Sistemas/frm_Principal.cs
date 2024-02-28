@@ -127,9 +127,10 @@ namespace Stock_Sistemas
             openChildForm(new frm_Materiales());
         }
 
-        private void btn_Opciones_Click(object sender, EventArgs e)
+        private void btn_Reportes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            openChildForm(new frm_Reportes());
         }
 
         private void pbLogo_Click(object sender, EventArgs e)

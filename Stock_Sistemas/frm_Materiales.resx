@@ -117,4 +117,66 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Elipse_Form.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQhJREFUOE/N
+        z81KAmEUBuC5oCCCwMZSK5QoikSMIIgiELyOuoUW/XgZzdDGZeloTv8/y/gENy502eq8nc/5dBw8WLOq
+        A+/yec851v8ZfJT7eC8Bb0fA6yHQvQa+OkG6DvBYAB7ywP0WZ6NnWDgR/LIPtM8YugFWp4y3hxjkr8Gw
+        cAJ8EODnPc4u8LRjNkcxtXJCwQ+Y/BDT3apQEANTMyMUiHhzDGdHmBpLUoHGxV9h8pJCQQxMXkIomIKr
+        l8ucNKoXKQ6X1OeFghFeH8Mrg83KTUE5ixwb6ioBqs0JBUPcimJ9tt5cOUmjcswXnC+AbmcnCxj3JUye
+        PfhZn603a0w3M5+G/flY1jfGW7tRyMVMVQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="resource.Image1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQNJREFUOE+t
+        0r1Kw1AYgOFcgqudsnkFFrwKewluxakdOnVpFhcLFToUNJaT0L3gFRjxAuwmdBAaCmJBSvypBG3fniOf
+        Q2jzA/bdQs5zzglfrJ2nwPahppao/jctN+ZYXuU3AMdfgcZozFUMvS/oLri9mGPLsu2l4k/ovMN5xIMs
+        3ez32tmYs1d9wguOkGT+EicPt2bQfCYQkkxjrwCmMQUhyTR2iuB6yEhIssuYSh6uTeD0CU/IZt0Pgixc
+        Hf8sTh4zRmnm3H5jlIaPbsYcBpGS5emZUWkc/H2zubY5uXwXeQfD2X3pOszfJK2SG3r7bshuNnEn23+q
+        Ihlsq/mePP4ny1oDB0VvOMuNLowAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="Editar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Editar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAL9JREFUOE9j
+        oDs4FZBgAGWSDm6fPRt9KjLj44mAhPlQIeLBrVu3Em7fvv3/1rVrN0CGkOSS9/sY4h6eydt38+bN/yB8
+        49SpaKgUYQDS/HYfwz8g/v/wdNHW69evJ0ClCIM3+xlyYJrBeC9DA1SKMIBqhmgcUM1Afg1UijDAojkH
+        KkUYvD9jU4Os+e1+hnyoFHHg3avLj98eUSDdZhDYtGmTzeHDh/+/e3HmybuTJi1QYeLB1q1b5UGGQLn0
+        BAwMABkul9PPj5g2AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="Eliminar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Eliminar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAALNJREFUOE9j
+        oBn478Cg8N+RwR6MgWyoMH7wP89hwv98h/3/c2xO/082/P0/yeA/GIPYIDGQXL5DP1Q5Jvifa3fkf5bV
+        ZRTNyIaA5IBqoMoxAdCpDv9tGf7jxUA1UOWYgKoG/M21h2tCZhNlAEjDr1+//v+ZUwvGIPbfLGviDQBh
+        mEaYQTBx+hiA1QuwcCDWBX/zneG2khyIeDEBAwywakLGQDVQ5dgB2BCQS7Bj/JpJBwwMAAaXKzciiz4c
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="productosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>270, 17</value>
+  </metadata>
+  <data name="btn_Cerrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAHxJREFUOE/N
+        ksENgCAQBCnJkuy/CWQYCA+8EPShmxBhd/bQxPQf5ZyPss52DAUD245DLUDhEDKRgCEwnwE8o8VbAsgN
+        kL3WotwFKF+fe+UuCvaq9sqIkt2qx7fvfwKg/Ciw11oMAZCbQTyjYAiBeXwLmcgNU8x3v/JHSukCOJHi
+        7U97ZyUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="elipse_btnClose.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 17</value>
+  </metadata>
 </root>

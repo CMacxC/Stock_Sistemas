@@ -30,6 +30,8 @@ namespace Stock_Sistemas
 
         private void cargarStock()
         {
+            stock.Producto = txt_Buscar.Text;
+
             IEnumerable<Stock> almacen = stock.getAll();
 
             if(almacen.Count() > 0)
@@ -65,7 +67,7 @@ namespace Stock_Sistemas
                 stiReporte.LoadFromString(reporte.XML);
                 stiReporte.ReportName = reporte.Nombre;
                 stiReporte.Dictionary.Databases.Clear();
-                stiReporte.Dictionary.Databases.Add(new StiSqlDatabase("InventarioSistemas", Data.conString));
+                stiReporte.Dictionary.Databases.Add(new StiSqlDatabase("CpmAlmacen", Data.conString));
                 //stiReporte.Dictionary.Variables.Add(new StiVariable("programa"));
                 stiReporte.Show();
             }

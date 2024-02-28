@@ -121,20 +121,18 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_ImprimirReporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAS9JREFUSEtjGJ6g//R3h/6TPxtIwkA9UO2EAUjDhFM//5OCQXqg2gmDoW2Bo6Nj
-        Q2bbPKyG4MMgPSC9UGMwQXx8PEdiYmJycHDw7Pii+guFk9Y9IAWD9ID0gszIzc1lhxqLAECJtUD8nxo4
-        ISFhNdRYBABK/ERXSCq2m5Dx335CJoj9E2osAqArphRDjUUAbIoowVBjEQAYQf+piaHGIoCTk9N/amKo
-        sQgAk7C3t/9vamr638TEhCQM0gPSS9ACCwuL/8apvf+dln4lCYP0gPTitACYC3/CJMnNyTD9QLN+QI1F
-        AKDEGmwWSJZdwotDFzzFsACIV0GNRQAPDw92oM1JQNxRPHPHEZgFxGKQHpBeIE4EmQU1FjtALk2xuRqE
-        YS6H4cFTXIMAzavMIQQYGABMUWceIWMpyQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAX1JREFUOE+t
+        k8tKw0AUQAPRheAiXXRtpEotviJNQRTs6Je4UwRpVgW1oCmKS/0HC8UH9VGw2i4m2KRBEfsLgthoW41/
+        MN4JIymdaDceOIsO9548SIV/QcGuNFN2k0rJldlRIKqZ1VD9QGI/fdSKi5TKJ5m6bRvsKBC1qhuqqde5
+        yG+BWXtfVi19G66MqfGq7sZNnXCRoEDC2lN+FoKkETbKB3otUxNWdtlbpnQHwqtzRnhlnlC9AQZ9B9wy
+        pTsQSi8YoXSSUL0BBtz2BbdM6Q5Im4sGSKjeQC+4QAYCWxAAvYEO+jR7R0zZWNBs/5vhA0uHIAGfvYEO
+        RK1miKkagRBiR3zgL0TNgoAFgSofmL75cCev23i82MKxqyaOFpp49OwNR04cPJxvYDnXwAMb94/i+t2X
+        oGH/EeC/oLAAgQCBAIldNkm08E4gQCLHDoEAkXOvZDDzYPavlRW26qOUIVJqoQlqsYXGzqkOGjkF8w6S
+        qUcvSNp9GmIr/4EgfAMd+CPoS5s+HAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="stockBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>134, 17</value>
-  </metadata>
   <data name="btn_Cerrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAHxJREFUOE/N
@@ -143,7 +141,4 @@
         7U97ZyUAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="Elipse_Close.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>293, 17</value>
-  </metadata>
 </root>

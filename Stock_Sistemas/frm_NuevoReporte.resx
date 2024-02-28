@@ -121,20 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_ImprimirReporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAS9JREFUSEtjGJ6g//R3h/6TPxtIwkA9UO2EAUjDhFM//5OCQXqg2gmDoW2Bo6Nj
-        Q2bbPKyG4MMgPSC9UGMwQXx8PEdiYmJycHDw7Pii+guFk9Y9IAWD9ID0gszIzc1lhxqLAECJtUD8nxo4
-        ISFhNdRYBABK/ERXSCq2m5Dx335CJoj9E2osAqArphRDjUUAbIoowVBjEQAYQf+piaHGIoCTk9N/amKo
-        sQgAk7C3t/9vamr638TEhCQM0gPSS9ACCwuL/8apvf+dln4lCYP0gPTitACYC3/CJMnNyTD9QLN+QI1F
-        AKDEGmwWSJZdwotDFzzFsACIV0GNRQAPDw92oM1JQNxRPHPHEZgFxGKQHpBeIE4EmQU1FjtALk2xuRqE
-        YS6H4cFTXIMAzavMIQQYGABMUWceIWMpyQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="stockBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>134, 17</value>
-  </metadata>
   <data name="btn_Cerrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAHxJREFUOE/N
@@ -143,7 +129,7 @@
         7U97ZyUAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="Elipse_Close.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>293, 17</value>
+  <metadata name="Elipse_btnCerrar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 17</value>
   </metadata>
 </root>

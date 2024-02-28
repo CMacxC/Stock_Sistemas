@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Dapper;
 using DataAccess_Layer;
 
-namespace Business_Layer
+namespace Business_Layer.Consultas
 {
     public class Productos
     {
@@ -15,17 +12,16 @@ namespace Business_Layer
         public int Id_Producto { get; set; }
         public String Nombre { get; set; }
         public String Modelo { get; set; }
-        public int Marca { get; set; }
+        public String Marca { get; set; }
         public int Estatus { get; set; }
 
         public Productos() { }
 
-        public int updateEstatus()
+        public IEnumerable<Productos> getAll()
         {
             var param = new DynamicParameters();
-            param.Add("Id", Id_Producto);
-            param.Add("Estatus", Estatus);
-            return data.Execute("stp_Productos_updateEstatus", param);
+            param.Add("Producto", Nombre);
+            return data.Query<Productos>("stp_Productos_getAll", param);
         }
     }
 }
