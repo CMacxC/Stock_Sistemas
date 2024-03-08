@@ -50,10 +50,11 @@
             this.stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btn_ImprimirReporte = new System.Windows.Forms.Button();
             this.Elipse_Close = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.txt_Buscar = new System.Windows.Forms.TextBox();
+            this.txt_Buscar = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
             this.p_BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Almacen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Buscar)).BeginInit();
             this.SuspendLayout();
             // 
             // Elipse_Form
@@ -233,11 +234,32 @@
             // 
             // txt_Buscar
             // 
-            this.txt_Buscar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Buscar.Location = new System.Drawing.Point(15, 62);
+            this.txt_Buscar.AutoSize = false;
+            this.txt_Buscar.CaptionStyle.BackgroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txt_Buscar.CaptionStyle.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.txt_Buscar.CaptionStyle.BackgroundStyle.SolidColor = System.Drawing.Color.White;
+            this.txt_Buscar.CaptionStyle.BorderStyle.SolidColor = System.Drawing.Color.Transparent;
+            this.txt_Buscar.CaptionStyle.CaptionSize = 30;
+            this.txt_Buscar.CaptionStyle.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.txt_Buscar.CaptionStyle.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.txt_Buscar.CaptionStyle.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.txt_Buscar.CaptionStyle.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txt_Buscar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_Buscar.EditBoxStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Buscar.EditBoxStyle.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_Buscar.Location = new System.Drawing.Point(15, 56);
             this.txt_Buscar.Name = "txt_Buscar";
-            this.txt_Buscar.Size = new System.Drawing.Size(227, 25);
+            this.txt_Buscar.Size = new System.Drawing.Size(330, 30);
             this.txt_Buscar.TabIndex = 3;
+            this.txt_Buscar.ValidationStyle.PasswordChar = '\0';
+            this.txt_Buscar.Value = "";
+            this.txt_Buscar.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
+            this.txt_Buscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Buscar_KeyPress);
             // 
             // frm_Existencias
             // 
@@ -257,8 +279,8 @@
             this.p_BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Almacen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Buscar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -277,6 +299,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Cerrar;
         private Bunifu.Framework.UI.BunifuElipse Elipse_Close;
-        private System.Windows.Forms.TextBox txt_Buscar;
+        private Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_Buscar;
     }
 }

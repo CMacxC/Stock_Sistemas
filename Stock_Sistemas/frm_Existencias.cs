@@ -26,6 +26,8 @@ namespace Stock_Sistemas
 
             //Cargamos los datos en la tabla
             cargarStock();
+
+            txt_Buscar.Focus();
         }
 
         private void cargarStock()
@@ -76,6 +78,11 @@ namespace Stock_Sistemas
         private void btn_Cerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_Buscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            cargarStock();
         }
     }
 }

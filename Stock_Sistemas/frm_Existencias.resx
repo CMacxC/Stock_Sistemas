@@ -121,10 +121,20 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQNJREFUOE+t
+        0r1Kw1AYgOFcgqudsnkFFrwKewluxakdOnVpFhcLFToUNJaT0L3gFRjxAuwmdBAaCmJBSvypBG3fniOf
+        Q2jzA/bdQs5zzglfrJ2nwPahppao/jctN+ZYXuU3AMdfgcZozFUMvS/oLri9mGPLsu2l4k/ovMN5xIMs
+        3ez32tmYs1d9wguOkGT+EicPt2bQfCYQkkxjrwCmMQUhyTR2iuB6yEhIssuYSh6uTeD0CU/IZt0Pgixc
+        Hf8sTh4zRmnm3H5jlIaPbsYcBpGS5emZUWkc/H2zubY5uXwXeQfD2X3pOszfJK2SG3r7bshuNnEn23+q
+        Ihlsq/mePP4ny1oDB0VvOMuNLowAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btn_ImprimirReporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAS9JREFUSEtjGJ6g//R3h/6TPxtIwkA9UO2EAUjDhFM//5OCQXqg2gmDoW2Bo6Nj
+        DwAACw8BkvkDpQAAAS9JREFUSEtjGJ6g//R3h/6TPxtIwkA9UO2EAUjDhFM//5OCQXqg2gmDoW2Bo6Nj
         Q2bbPKyG4MMgPSC9UGMwQXx8PEdiYmJycHDw7Pii+guFk9Y9IAWD9ID0gszIzc1lhxqLAECJtUD8nxo4
         ISFhNdRYBABK/ERXSCq2m5Dx335CJoj9E2osAqArphRDjUUAbIoowVBjEQAYQf+piaHGIoCTk9N/amKo
         sQgAk7C3t/9vamr638TEhCQM0gPSS9ACCwuL/8apvf+dln4lCYP0gPTitACYC3/CJMnNyTD9QLN+QI1F

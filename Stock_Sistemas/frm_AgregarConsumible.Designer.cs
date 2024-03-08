@@ -30,27 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_AgregarConsumible));
+            Klik.Windows.Forms.v1.Common.PaintStyle paintStyle1 = new Klik.Windows.Forms.v1.Common.PaintStyle();
             this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_Titulo = new System.Windows.Forms.Label();
             this.btn_Cerrar = new System.Windows.Forms.Button();
+            this.lbl_Titulo = new System.Windows.Forms.Label();
             this.txt_Id = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
             this.txt_Descripcion = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
             this.txt_Modelo = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
             this.txt_IdMarca = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
-            this.txt_DescripcionMarca = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
             this.btn_Guardar = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.btn_Cancelar = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.btn_CatalogoMarcas = new Klik.Windows.Forms.v1.EntryLib.ELButton();
+            this.Elipse_btnCerrar = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.lbl_DescripcionMarca = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Id)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Descripcion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Modelo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_IdMarca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_DescripcionMarca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Guardar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_CatalogoMarcas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_DescripcionMarca)).BeginInit();
             this.SuspendLayout();
             // 
             // Elipse_Form
@@ -69,17 +71,6 @@
             this.panel1.Size = new System.Drawing.Size(402, 30);
             this.panel1.TabIndex = 0;
             // 
-            // lbl_Titulo
-            // 
-            this.lbl_Titulo.AutoSize = true;
-            this.lbl_Titulo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Titulo.ForeColor = System.Drawing.Color.White;
-            this.lbl_Titulo.Location = new System.Drawing.Point(12, 7);
-            this.lbl_Titulo.Name = "lbl_Titulo";
-            this.lbl_Titulo.Size = new System.Drawing.Size(43, 17);
-            this.lbl_Titulo.TabIndex = 0;
-            this.lbl_Titulo.Text = "label1";
-            // 
             // btn_Cerrar
             // 
             this.btn_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -93,6 +84,18 @@
             this.btn_Cerrar.Size = new System.Drawing.Size(30, 30);
             this.btn_Cerrar.TabIndex = 1;
             this.btn_Cerrar.UseVisualStyleBackColor = true;
+            this.btn_Cerrar.Click += new System.EventHandler(this.btn_Cerrar_Click);
+            // 
+            // lbl_Titulo
+            // 
+            this.lbl_Titulo.AutoSize = true;
+            this.lbl_Titulo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Titulo.ForeColor = System.Drawing.Color.White;
+            this.lbl_Titulo.Location = new System.Drawing.Point(12, 7);
+            this.lbl_Titulo.Name = "lbl_Titulo";
+            this.lbl_Titulo.Size = new System.Drawing.Size(43, 17);
+            this.lbl_Titulo.TabIndex = 0;
+            this.lbl_Titulo.Text = "label1";
             // 
             // txt_Id
             // 
@@ -200,29 +203,6 @@
             this.txt_IdMarca.Value = "";
             this.txt_IdMarca.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
-            // txt_DescripcionMarca
-            // 
-            this.txt_DescripcionMarca.CaptionStyle.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.txt_DescripcionMarca.CaptionStyle.BackgroundStyle.SolidColor = System.Drawing.Color.Transparent;
-            this.txt_DescripcionMarca.CaptionStyle.BorderStyle.SolidColor = System.Drawing.Color.Transparent;
-            this.txt_DescripcionMarca.CaptionStyle.CaptionSize = 0;
-            this.txt_DescripcionMarca.CaptionStyle.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.txt_DescripcionMarca.CaptionStyle.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.txt_DescripcionMarca.EditBoxStyle.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_DescripcionMarca.EditBoxStyle.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_DescripcionMarca.EditBoxStyle.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_DescripcionMarca.EditBoxStyle.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_DescripcionMarca.EditBoxStyle.BorderStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_DescripcionMarca.EditBoxStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_DescripcionMarca.EditBoxStyle.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txt_DescripcionMarca.Location = new System.Drawing.Point(177, 186);
-            this.txt_DescripcionMarca.Name = "txt_DescripcionMarca";
-            this.txt_DescripcionMarca.Size = new System.Drawing.Size(180, 30);
-            this.txt_DescripcionMarca.TabIndex = 5;
-            this.txt_DescripcionMarca.ValidationStyle.PasswordChar = '\0';
-            this.txt_DescripcionMarca.Value = "";
-            this.txt_DescripcionMarca.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
-            // 
             // btn_Guardar
             // 
             this.btn_Guardar.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
@@ -289,7 +269,7 @@
             this.btn_CatalogoMarcas.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
             this.btn_CatalogoMarcas.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btn_CatalogoMarcas.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_CatalogoMarcas.Location = new System.Drawing.Point(363, 186);
+            this.btn_CatalogoMarcas.Location = new System.Drawing.Point(362, 186);
             this.btn_CatalogoMarcas.Name = "btn_CatalogoMarcas";
             this.btn_CatalogoMarcas.Size = new System.Drawing.Size(30, 30);
             this.btn_CatalogoMarcas.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(123)))));
@@ -297,6 +277,32 @@
             this.btn_CatalogoMarcas.Tag = "Ver catlogo de marcas";
             this.btn_CatalogoMarcas.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_CatalogoMarcas.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_CatalogoMarcas.Click += new System.EventHandler(this.btn_CatalogoMarcas_Click);
+            // 
+            // Elipse_btnCerrar
+            // 
+            this.Elipse_btnCerrar.ElipseRadius = 5;
+            this.Elipse_btnCerrar.TargetControl = this.btn_Cerrar;
+            // 
+            // lbl_DescripcionMarca
+            // 
+            this.lbl_DescripcionMarca.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.lbl_DescripcionMarca.BackgroundStyle.SolidColor = System.Drawing.Color.White;
+            this.lbl_DescripcionMarca.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.lbl_DescripcionMarca.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.lbl_DescripcionMarca.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.lbl_DescripcionMarca.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.lbl_DescripcionMarca.BorderStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_DescripcionMarca.Cursor = System.Windows.Forms.Cursors.Default;
+            paintStyle1.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            paintStyle1.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.lbl_DescripcionMarca.FlashStyle = paintStyle1;
+            this.lbl_DescripcionMarca.Location = new System.Drawing.Point(172, 187);
+            this.lbl_DescripcionMarca.Name = "lbl_DescripcionMarca";
+            this.lbl_DescripcionMarca.Size = new System.Drawing.Size(180, 28);
+            this.lbl_DescripcionMarca.TabIndex = 9;
+            this.lbl_DescripcionMarca.TabStop = false;
+            this.lbl_DescripcionMarca.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
             // frm_AgregarConsumible
             // 
@@ -304,10 +310,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(402, 284);
+            this.Controls.Add(this.lbl_DescripcionMarca);
             this.Controls.Add(this.btn_CatalogoMarcas);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Guardar);
-            this.Controls.Add(this.txt_DescripcionMarca);
             this.Controls.Add(this.txt_IdMarca);
             this.Controls.Add(this.txt_Modelo);
             this.Controls.Add(this.txt_Descripcion);
@@ -315,6 +321,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_AgregarConsumible";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Consumible";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -322,10 +329,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Descripcion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Modelo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_IdMarca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_DescripcionMarca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Guardar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_CatalogoMarcas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_DescripcionMarca)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -340,9 +347,10 @@
         private Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_Descripcion;
         private Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_IdMarca;
         private Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_Modelo;
-        private Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_DescripcionMarca;
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_Guardar;
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_CatalogoMarcas;
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_Cancelar;
+        private Bunifu.Framework.UI.BunifuElipse Elipse_btnCerrar;
+        private Klik.Windows.Forms.v1.EntryLib.ELLabel lbl_DescripcionMarca;
     }
 }

@@ -16,5 +16,15 @@ namespace Stock_Sistemas
         {
             InitializeComponent();
         }
+
+        private void btn_Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_CatalogoMarcas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

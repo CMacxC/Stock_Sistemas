@@ -75,6 +75,15 @@ namespace Stock_Sistemas
                     frmAC.lbl_Titulo.Text = "Editar Consumible";
                     frmAC.Show();
                     break;
+
+                case 6:
+                    DialogResult mdg = MessageBox.Show("¿Esta seguro que desea eliminar el producto seleccionado?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if(mdg == DialogResult.Yes)
+                    {
+
+                    }
+                    break;
             }
         }
 
