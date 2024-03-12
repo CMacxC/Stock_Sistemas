@@ -186,5 +186,11 @@ namespace Stock_Sistemas
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void btn_Compras_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            openChildForm(new frm_Compra());
+        }
     }
 }

@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pMenu = new System.Windows.Forms.Panel();
-            this.btn_Compras = new FontAwesome.Sharp.IconButton();
             this.btn_Reportes = new FontAwesome.Sharp.IconButton();
             this.btn_Materiales = new FontAwesome.Sharp.IconButton();
             this.btn_Salidas = new FontAwesome.Sharp.IconButton();
+            this.btn_Compras = new FontAwesome.Sharp.IconButton();
             this.btn_Existencias = new FontAwesome.Sharp.IconButton();
             this.pLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,10 +58,10 @@
             // pMenu
             // 
             this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.pMenu.Controls.Add(this.btn_Compras);
             this.pMenu.Controls.Add(this.btn_Reportes);
             this.pMenu.Controls.Add(this.btn_Materiales);
             this.pMenu.Controls.Add(this.btn_Salidas);
+            this.pMenu.Controls.Add(this.btn_Compras);
             this.pMenu.Controls.Add(this.btn_Existencias);
             this.pMenu.Controls.Add(this.pLogo);
             this.pMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -82,7 +82,7 @@
             this.btn_Reportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Reportes.IconSize = 32;
             this.btn_Reportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Reportes.Location = new System.Drawing.Point(0, 290);
+            this.btn_Reportes.Location = new System.Drawing.Point(0, 340);
             this.btn_Reportes.Name = "btn_Reportes";
             this.btn_Reportes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Reportes.Size = new System.Drawing.Size(220, 50);
@@ -105,7 +105,7 @@
             this.btn_Materiales.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Materiales.IconSize = 32;
             this.btn_Materiales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Materiales.Location = new System.Drawing.Point(0, 240);
+            this.btn_Materiales.Location = new System.Drawing.Point(0, 290);
             this.btn_Materiales.Name = "btn_Materiales";
             this.btn_Materiales.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Materiales.Size = new System.Drawing.Size(220, 50);
@@ -128,7 +128,7 @@
             this.btn_Salidas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Salidas.IconSize = 32;
             this.btn_Salidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Salidas.Location = new System.Drawing.Point(0, 190);
+            this.btn_Salidas.Location = new System.Drawing.Point(0, 240);
             this.btn_Salidas.Name = "btn_Salidas";
             this.btn_Salidas.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Salidas.Size = new System.Drawing.Size(220, 50);
@@ -151,7 +151,7 @@
             this.btn_Compras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Compras.IconSize = 32;
             this.btn_Compras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Compras.Location = new System.Drawing.Point(0, 340);
+            this.btn_Compras.Location = new System.Drawing.Point(0, 190);
             this.btn_Compras.Name = "btn_Compras";
             this.btn_Compras.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Compras.Size = new System.Drawing.Size(220, 50);
@@ -160,6 +160,7 @@
             this.btn_Compras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Compras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Compras.UseVisualStyleBackColor = true;
+            this.btn_Compras.Click += new System.EventHandler(this.btn_Compras_Click);
             // 
             // btn_Existencias
             // 
@@ -354,6 +355,7 @@
         private System.Windows.Forms.Panel pContainer;
         private FontAwesome.Sharp.IconButton btn_Existencias;
         private System.Windows.Forms.Panel pLogo;
+        private FontAwesome.Sharp.IconButton btn_Compras;
         private FontAwesome.Sharp.IconButton btn_Reportes;
         private FontAwesome.Sharp.IconButton btn_Materiales;
         private FontAwesome.Sharp.IconButton btn_Salidas;
@@ -367,7 +369,6 @@
         private FontAwesome.Sharp.IconButton btn_Minimize;
         private Bunifu.Framework.UI.BunifuElipse Elipse_ResMax;
         private Bunifu.Framework.UI.BunifuElipse Elipse_Minimizar;
-        private FontAwesome.Sharp.IconButton btn_Compras;
     }
 }
 

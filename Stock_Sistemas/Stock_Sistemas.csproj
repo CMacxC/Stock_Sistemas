@@ -200,6 +200,7 @@
       <DependentUpon>frm_RegistrarSalida.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Business_Layer.Compras.datasource" />
     <None Include="Properties\DataSources\Business_Layer.Consultas.cSalidas.datasource" />
     <None Include="Properties\DataSources\Business_Layer.Consultas.Productos.datasource" />
     <None Include="Properties\DataSources\Business_Layer.Consultas.Salidas.datasource" />
