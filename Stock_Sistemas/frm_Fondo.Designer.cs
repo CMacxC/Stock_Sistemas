@@ -40,7 +40,6 @@
             this.Name = "frm_Fondo";
             this.Opacity = 0.8D;
             this.Text = "Fondo";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

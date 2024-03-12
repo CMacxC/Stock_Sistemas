@@ -12,7 +12,6 @@ C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\S
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.csproj.CopyComplete
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Existencias.resources
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Materiales.resources
-C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Movimientos.resources
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Business_Layer.dll
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Business_Layer.pdb
@@ -47,3 +46,7 @@ C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\S
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Fondo.resources
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_NuevoReporte.resources
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_AgregarConsumible.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Compra.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_Salidas.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_RegistrarSalida.resources
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_CatalogoConsumibles.resources

@@ -17,7 +17,7 @@ namespace Stock_Sistemas
 {
     public partial class frm_Existencias : Form
     {
-        private Stock stock = new Stock();
+        private cStock stock = new cStock();
         private Reportes reporte = new Reportes();
 
         public frm_Existencias()
@@ -34,7 +34,7 @@ namespace Stock_Sistemas
         {
             stock.Producto = txt_Buscar.Text;
 
-            IEnumerable<Stock> almacen = stock.getAll();
+            IEnumerable<cStock> almacen = stock.getAll();
 
             if(almacen.Count() > 0)
             {

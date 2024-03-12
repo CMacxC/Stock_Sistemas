@@ -9,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business_Layer;
+using Business_Layer.Consultas;
 
 namespace Stock_Sistemas
 {
     public partial class frm_Materiales : Form
     {
-        private Business_Layer.Consultas.Productos bissP = new Business_Layer.Consultas.Productos();
-        private Business_Layer.Productos bissPe = new Business_Layer.Productos();
+        private cProductos bissP = new cProductos();
+        private Productos bissPe = new Productos();
 
         public frm_Materiales()
         {

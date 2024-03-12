@@ -13,29 +13,27 @@ namespace Business_Layer
         private Data data = Data.Instance();
 
 
-        public int Id_Salida { get; set; }
+        public int Id { get; set; }
         public int Folio_Nota { get; set; }
         public int Cantidad { get; set; }
         public int Producto { get; set; }
         public String Fecha_Salida { get; set; }
         public String Recibio { get; set; }
         public String Empresa { get; set; }
-        public int Tipo { get; set; }
-
-        public String Fecha1 { get; set; }
-        public String Fecha2 { get; set; }
 
         public Salidas() { }
 
-        public IEnumerable<Salidas> ByFecha()
+        public int Insert()
         {
             var param = new DynamicParameters();
-            param.Add("Fecha1", Fecha1);
-            param.Add("Fecha2", Fecha2);
-            param.Add("Tipo", Tipo);
 
-            return data.Query<Salidas>("stp_Salidas_byFecha", param);
+            param.Add("Nota", Folio_Nota);
+            param.Add("Cantidad", Cantidad);
+            param.Add("Producto", Producto);
+            param.Add("Fecha", Fecha_Salida);
+            param.Add("Persona", Recibio);
 
+            return data.Execute("stp_Salidas_Insert", param);
         }
     }
 }

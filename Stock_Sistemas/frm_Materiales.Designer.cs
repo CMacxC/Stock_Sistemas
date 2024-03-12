@@ -239,7 +239,7 @@
             // 
             // productosBindingSource
             // 
-            this.productosBindingSource.DataSource = typeof(Business_Layer.Consultas.Productos);
+            this.productosBindingSource.DataSource = typeof(Business_Layer.Consultas.cProductos);
             // 
             // txt_Buscar
             // 

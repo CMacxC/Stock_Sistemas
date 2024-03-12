@@ -8,7 +8,7 @@ using DataAccess_Layer;
 
 namespace Business_Layer.Consultas
 {
-    public class Stock
+    public class cStock
     {
         private Data data = Data.Instance();
 
@@ -18,11 +18,11 @@ namespace Business_Layer.Consultas
         public String Marca { get; set; }
         public int Cantidad { get; set; }
 
-        public Stock() { }
+        public cStock() { }
 
-        public IEnumerable<Stock> getAll()
+        public IEnumerable<cStock> getAll()
         {
-            return data.Query<Stock>("stp_Stock_getAll");
+            return data.Query<cStock>("stp_Stock_getAll");
         }
     }
 }

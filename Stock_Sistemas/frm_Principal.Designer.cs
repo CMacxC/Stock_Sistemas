@@ -121,7 +121,7 @@
             this.btn_Movimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Movimientos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Movimientos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Movimientos.IconChar = FontAwesome.Sharp.IconChar.Exchange;
+            this.btn_Movimientos.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
             this.btn_Movimientos.IconColor = System.Drawing.Color.Gainsboro;
             this.btn_Movimientos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Movimientos.IconSize = 32;
@@ -131,7 +131,7 @@
             this.btn_Movimientos.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Movimientos.Size = new System.Drawing.Size(220, 50);
             this.btn_Movimientos.TabIndex = 2;
-            this.btn_Movimientos.Text = "Movimientos";
+            this.btn_Movimientos.Text = "Salidas";
             this.btn_Movimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Movimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Movimientos.UseVisualStyleBackColor = true;
@@ -281,7 +281,7 @@
             // 
             // pContainer
             // 
-            this.pContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(173)))), ((int)(((byte)(214)))));
+            this.pContainer.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContainer.Location = new System.Drawing.Point(220, 100);
             this.pContainer.Name = "pContainer";

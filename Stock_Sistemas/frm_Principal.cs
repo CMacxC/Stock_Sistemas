@@ -117,7 +117,7 @@ namespace Stock_Sistemas
         private void btn_Movimientos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            openChildForm(new frm_Movimientos());
+            openChildForm(new frm_Salidas());
         }
 
         private void btn_Materiales_Click(object sender, EventArgs e)

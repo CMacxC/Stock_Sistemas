@@ -20,6 +20,14 @@ namespace Business_Layer
 
         public Productos() { }
 
+        public IEnumerable<Productos> getByNombre()
+        {
+            var param = new DynamicParameters();
+            param.Add("Nombre", Nombre);
+
+            return data.Query<Productos>("stp_Productos_getByNombre", param);
+        }
+
         public int updateEstatus()
         {
             var param = new DynamicParameters();

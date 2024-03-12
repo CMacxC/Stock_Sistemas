@@ -209,7 +209,7 @@
             // 
             // stockBindingSource
             // 
-            this.stockBindingSource.DataSource = typeof(Business_Layer.Consultas.Stock);
+            this.stockBindingSource.DataSource = typeof(Business_Layer.Consultas.cStock);
             // 
             // btn_ImprimirReporte
             // 

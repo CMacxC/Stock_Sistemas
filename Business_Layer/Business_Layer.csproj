@@ -44,8 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Consultas\Productos.cs" />
-    <Compile Include="Consultas\Stock.cs" />
+    <Compile Include="Consultas\cProductos.cs" />
+    <Compile Include="Consultas\cSalidas.cs" />
+    <Compile Include="Consultas\cStock.cs" />
     <Compile Include="Entidades\Almacen.cs" />
     <Compile Include="Entidades\Compras.cs" />
     <Compile Include="Entidades\Detalle_Compras.cs" />

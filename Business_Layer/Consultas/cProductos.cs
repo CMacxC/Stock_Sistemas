@@ -5,7 +5,7 @@ using DataAccess_Layer;
 
 namespace Business_Layer.Consultas
 {
-    public class Productos
+    public class cProductos
     {
         private Data data = Data.Instance();
 
@@ -15,13 +15,13 @@ namespace Business_Layer.Consultas
         public String Marca { get; set; }
         public int Estatus { get; set; }
 
-        public Productos() { }
+        public cProductos() { }
 
-        public IEnumerable<Productos> getAll()
+        public IEnumerable<cProductos> getAll()
         {
             var param = new DynamicParameters();
             param.Add("Producto", Nombre);
-            return data.Query<Productos>("stp_Productos_getAll", param);
+            return data.Query<cProductos>("stp_Productos_getAll", param);
         }
     }
 }
