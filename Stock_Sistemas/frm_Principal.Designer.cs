@@ -30,9 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pMenu = new System.Windows.Forms.Panel();
+            this.btn_Compras = new FontAwesome.Sharp.IconButton();
             this.btn_Reportes = new FontAwesome.Sharp.IconButton();
             this.btn_Materiales = new FontAwesome.Sharp.IconButton();
-            this.btn_Movimientos = new FontAwesome.Sharp.IconButton();
+            this.btn_Salidas = new FontAwesome.Sharp.IconButton();
             this.btn_Existencias = new FontAwesome.Sharp.IconButton();
             this.pLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,9 +58,10 @@
             // pMenu
             // 
             this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.pMenu.Controls.Add(this.btn_Compras);
             this.pMenu.Controls.Add(this.btn_Reportes);
             this.pMenu.Controls.Add(this.btn_Materiales);
-            this.pMenu.Controls.Add(this.btn_Movimientos);
+            this.pMenu.Controls.Add(this.btn_Salidas);
             this.pMenu.Controls.Add(this.btn_Existencias);
             this.pMenu.Controls.Add(this.pLogo);
             this.pMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -84,7 +86,7 @@
             this.btn_Reportes.Name = "btn_Reportes";
             this.btn_Reportes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Reportes.Size = new System.Drawing.Size(220, 50);
-            this.btn_Reportes.TabIndex = 4;
+            this.btn_Reportes.TabIndex = 5;
             this.btn_Reportes.Text = "Reportes";
             this.btn_Reportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Reportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -107,35 +109,57 @@
             this.btn_Materiales.Name = "btn_Materiales";
             this.btn_Materiales.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Materiales.Size = new System.Drawing.Size(220, 50);
-            this.btn_Materiales.TabIndex = 3;
+            this.btn_Materiales.TabIndex = 4;
             this.btn_Materiales.Text = "Materiales";
             this.btn_Materiales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Materiales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Materiales.UseVisualStyleBackColor = true;
             this.btn_Materiales.Click += new System.EventHandler(this.btn_Materiales_Click);
             // 
-            // btn_Movimientos
+            // btn_Salidas
             // 
-            this.btn_Movimientos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Movimientos.FlatAppearance.BorderSize = 0;
-            this.btn_Movimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Movimientos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Movimientos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Movimientos.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
-            this.btn_Movimientos.IconColor = System.Drawing.Color.Gainsboro;
-            this.btn_Movimientos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Movimientos.IconSize = 32;
-            this.btn_Movimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Movimientos.Location = new System.Drawing.Point(0, 190);
-            this.btn_Movimientos.Name = "btn_Movimientos";
-            this.btn_Movimientos.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btn_Movimientos.Size = new System.Drawing.Size(220, 50);
-            this.btn_Movimientos.TabIndex = 2;
-            this.btn_Movimientos.Text = "Salidas";
-            this.btn_Movimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Movimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Movimientos.UseVisualStyleBackColor = true;
-            this.btn_Movimientos.Click += new System.EventHandler(this.btn_Movimientos_Click);
+            this.btn_Salidas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Salidas.FlatAppearance.BorderSize = 0;
+            this.btn_Salidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Salidas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salidas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Salidas.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
+            this.btn_Salidas.IconColor = System.Drawing.Color.Gainsboro;
+            this.btn_Salidas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_Salidas.IconSize = 32;
+            this.btn_Salidas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Salidas.Location = new System.Drawing.Point(0, 190);
+            this.btn_Salidas.Name = "btn_Salidas";
+            this.btn_Salidas.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btn_Salidas.Size = new System.Drawing.Size(220, 50);
+            this.btn_Salidas.TabIndex = 3;
+            this.btn_Salidas.Text = "Salidas";
+            this.btn_Salidas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Salidas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Salidas.UseVisualStyleBackColor = true;
+            this.btn_Salidas.Click += new System.EventHandler(this.btn_Movimientos_Click);
+            // 
+            // btn_Compras
+            // 
+            this.btn_Compras.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Compras.FlatAppearance.BorderSize = 0;
+            this.btn_Compras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Compras.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Compras.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Compras.IconChar = FontAwesome.Sharp.IconChar.Tag;
+            this.btn_Compras.IconColor = System.Drawing.Color.Gainsboro;
+            this.btn_Compras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_Compras.IconSize = 32;
+            this.btn_Compras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Compras.Location = new System.Drawing.Point(0, 340);
+            this.btn_Compras.Name = "btn_Compras";
+            this.btn_Compras.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btn_Compras.Size = new System.Drawing.Size(220, 50);
+            this.btn_Compras.TabIndex = 2;
+            this.btn_Compras.Text = "Compras";
+            this.btn_Compras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Compras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Compras.UseVisualStyleBackColor = true;
             // 
             // btn_Existencias
             // 
@@ -332,7 +356,7 @@
         private System.Windows.Forms.Panel pLogo;
         private FontAwesome.Sharp.IconButton btn_Reportes;
         private FontAwesome.Sharp.IconButton btn_Materiales;
-        private FontAwesome.Sharp.IconButton btn_Movimientos;
+        private FontAwesome.Sharp.IconButton btn_Salidas;
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
@@ -343,6 +367,7 @@
         private FontAwesome.Sharp.IconButton btn_Minimize;
         private Bunifu.Framework.UI.BunifuElipse Elipse_ResMax;
         private Bunifu.Framework.UI.BunifuElipse Elipse_Minimizar;
+        private FontAwesome.Sharp.IconButton btn_Compras;
     }
 }
 

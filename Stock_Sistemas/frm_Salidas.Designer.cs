@@ -223,6 +223,7 @@
             this.btn_ImprimirMovimiento.TextStyle.Text = "Imprimir Lista de Salidas";
             this.btn_ImprimirMovimiento.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_ImprimirMovimiento.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_ImprimirMovimiento.Click += new System.EventHandler(this.btn_ImprimirMovimiento_Click);
             // 
             // btn_Salidas
             // 

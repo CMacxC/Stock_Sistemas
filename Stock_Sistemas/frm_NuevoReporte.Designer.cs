@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_NuevoReporte));
             this.p_BarraTitulo = new System.Windows.Forms.Panel();
-            this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_Cerrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Elipse_btnCerrar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txt_Nombre = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
             this.txt_Reporte = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
@@ -41,6 +41,7 @@
             this.btn_Archivos = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.btn_Guardar = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.btn_Cancelar = new Klik.Windows.Forms.v1.EntryLib.ELButton();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.p_BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Nombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Reporte)).BeginInit();
@@ -61,22 +62,6 @@
             this.p_BarraTitulo.Size = new System.Drawing.Size(319, 30);
             this.p_BarraTitulo.TabIndex = 0;
             // 
-            // Elipse_Form
-            // 
-            this.Elipse_Form.ElipseRadius = 15;
-            this.Elipse_Form.TargetControl = this;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nuevo Reporte";
-            // 
             // btn_Cerrar
             // 
             this.btn_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -91,6 +76,22 @@
             this.btn_Cerrar.TabIndex = 1;
             this.btn_Cerrar.UseVisualStyleBackColor = true;
             this.btn_Cerrar.Click += new System.EventHandler(this.btn_Cerrar_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nuevo Reporte";
+            // 
+            // Elipse_Form
+            // 
+            this.Elipse_Form.ElipseRadius = 15;
+            this.Elipse_Form.TargetControl = this;
             // 
             // Elipse_btnCerrar
             // 
@@ -240,6 +241,13 @@
             this.btn_Cancelar.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.p_BarraTitulo;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // frm_NuevoReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,5 +290,6 @@
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_Archivos;
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_Cancelar;
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_Guardar;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

@@ -11,12 +11,15 @@ using System.Windows.Media;
 using Business_Layer.Entidades;
 using Business_Layer.Consultas;
 using Stock_Sistemas.Utilerias;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dictionary;
 
 namespace Stock_Sistemas
 {
     public partial class frm_Salidas : Form
     {
         private cSalidas bissS = new cSalidas();
+        //private Reportes reporte = new Reportes();
 
         private Funciones func = new Funciones();
 
@@ -87,6 +90,25 @@ namespace Stock_Sistemas
             frmRS.ShowDialog();
             frmF.Close();
             cargarDatos();
+        }
+
+        private void btn_ImprimirMovimiento_Click(object sender, EventArgs e)
+        {
+            Reportes reporte = new Reportes() { Nombre = "Lista Salidas" }.getByNombre();
+            if(reporte == null)
+            {
+                MessageBox.Show("El reporte no existe.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            StiReport stiReporte = new StiReport();
+            stiReporte.LoadFromString(reporte.XML);
+            stiReporte.ReportName = reporte.Nombre;
+            stiReporte.Dictionary.Databases.Clear();
+            stiReporte.Dictionary.Databases.Add(new StiSqlDatabase("Almacen Sistemas", DataAccess_Layer.Data.conString));
+            stiReporte.Dictionary.Variables.Add(new StiVariable("Fecha1", dtp_FechaInicial.Value.ToShortDateString()));
+            stiReporte.Dictionary.Variables.Add(new StiVariable("Fecha2", dtp_FechaFinal.Value.ToShortDateString()));
+            stiReporte.Show();
         }
     }
 }

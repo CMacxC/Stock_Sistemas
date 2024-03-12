@@ -80,7 +80,7 @@ namespace Stock_Sistemas
                     stiReporte.Save(string.Format("{0}\\{1}.mrt", Environment.GetFolderPath(Environment.SpecialFolder.Personal), reporte.Nombre));
                     stiReporte.Load(string.Format("{0}\\{1}.mrt", Environment.GetFolderPath(Environment.SpecialFolder.Personal), reporte.Nombre));
                     stiReporte.Dictionary.Databases.Clear();
-                    stiReporte.Dictionary.Databases.Add(new StiSqlDatabase("CpmAlmacen", DataAccess_Layer.Data.conString));
+                    stiReporte.Dictionary.Databases.Add(new StiSqlDatabase("Inventario Sistemas", DataAccess_Layer.Data.conString));
                     stiReporte.Design();
                     reporte.XML = stiReporte.SaveToString();
                     reporte.Update();
@@ -99,7 +99,12 @@ namespace Stock_Sistemas
                             Id_Reporte = Convert.ToInt32(row.Cells[0].Value)
                         }.Delete() > 0)
                         {
-                            MessageBox.Show("Error durante el proceso.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("Reporte eliminado.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            cargarTabla();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error en el proceso.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
 
                     }
@@ -114,6 +119,7 @@ namespace Stock_Sistemas
             frmF.Show();
             frmNR.ShowDialog();
             frmF.Close();
+            cargarTabla();
         }
     }
 }
