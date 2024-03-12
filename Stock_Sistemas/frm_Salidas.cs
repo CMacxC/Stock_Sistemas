@@ -86,6 +86,7 @@ namespace Stock_Sistemas
             frmF.Show();
             frmRS.ShowDialog();
             frmF.Close();
+            cargarDatos();
         }
     }
 }

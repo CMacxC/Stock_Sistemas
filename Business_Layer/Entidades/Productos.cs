@@ -18,6 +18,8 @@ namespace Business_Layer
         public int Marca { get; set; }
         public int Estatus { get; set; }
 
+        public String DMarca { get; set; }
+
         public Productos() { }
 
         public IEnumerable<Productos> getByNombre()

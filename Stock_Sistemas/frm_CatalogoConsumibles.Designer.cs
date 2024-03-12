@@ -38,15 +38,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.p_BarraTitulo = new System.Windows.Forms.Panel();
-            this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_Cerrar = new System.Windows.Forms.Button();
+            this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txt_Buscar = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
             this.dgv_Consumibles = new System.Windows.Forms.DataGridView();
-            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idProductoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.p_BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Buscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Consumibles)).BeginInit();
@@ -64,10 +65,16 @@
             this.p_BarraTitulo.Size = new System.Drawing.Size(369, 30);
             this.p_BarraTitulo.TabIndex = 0;
             // 
-            // Elipse_Form
+            // label1
             // 
-            this.Elipse_Form.ElipseRadius = 15;
-            this.Elipse_Form.TargetControl = this;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Catalogo consumibles";
             // 
             // btn_Cerrar
             // 
@@ -83,6 +90,11 @@
             this.btn_Cerrar.TabIndex = 0;
             this.btn_Cerrar.UseVisualStyleBackColor = true;
             this.btn_Cerrar.Click += new System.EventHandler(this.btn_Cerrar_Click);
+            // 
+            // Elipse_Form
+            // 
+            this.Elipse_Form.ElipseRadius = 15;
+            this.Elipse_Form.TargetControl = this;
             // 
             // txt_Buscar
             // 
@@ -145,7 +157,7 @@
             this.dgv_Consumibles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idProductoDataGridViewTextBoxColumn,
             this.nombreDataGridViewTextBoxColumn,
-            this.Marca});
+            this.DMarca});
             this.dgv_Consumibles.DataSource = this.productosBindingSource;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
@@ -176,25 +188,14 @@
             this.dgv_Consumibles.TabIndex = 2;
             this.dgv_Consumibles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Consumibles_CellContentClick);
             // 
-            // Marca
+            // DMarca
             // 
-            this.Marca.DataPropertyName = "Marca";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Marca.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Marca.HeaderText = "Marca";
-            this.Marca.Name = "Marca";
-            this.Marca.ReadOnly = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Catalogo consumibles";
+            this.DMarca.DataPropertyName = "DMarca";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.DMarca.DefaultCellStyle = dataGridViewCellStyle5;
+            this.DMarca.HeaderText = "Marca";
+            this.DMarca.Name = "DMarca";
+            this.DMarca.ReadOnly = true;
             // 
             // idProductoDataGridViewTextBoxColumn
             // 
@@ -219,6 +220,13 @@
             // productosBindingSource
             // 
             this.productosBindingSource.DataSource = typeof(Business_Layer.Productos);
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.p_BarraTitulo;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // frm_CatalogoConsumibles
             // 
@@ -249,10 +257,11 @@
         private System.Windows.Forms.Button btn_Cerrar;
         private Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_Buscar;
         private System.Windows.Forms.DataGridView dgv_Consumibles;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idProductoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
         private System.Windows.Forms.BindingSource productosBindingSource;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idProductoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DMarca;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

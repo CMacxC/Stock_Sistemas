@@ -48,14 +48,14 @@ namespace Stock_Sistemas
 
         private bool validarCampos()
         {
-            if(txt_Nombre.Text != string.Empty)
+            if(txt_Nombre.Text == string.Empty)
             {
                 txt_Nombre.Focus();
                 MessageBox.Show("El campo nombre esta vacío.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
 
-            if(txt_Reporte.Text != string.Empty)
+            if(txt_Reporte.Text == string.Empty)
             {
                 txt_Reporte.Focus();
                 MessageBox.Show("El campo reporte esta vacío", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
