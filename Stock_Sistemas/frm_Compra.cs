@@ -1,5 +1,7 @@
 ﻿using Business_Layer;
+using Business_Layer.Entidades;
 using Stimulsoft.Report;
+using Stimulsoft.Report.Dictionary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,7 +57,7 @@ namespace Stock_Sistemas
 
             compras = compra.getByFecha();
 
-            if(compras == null)
+            if(compras.Count() > 0)
             {
                 comprasBindingSource.DataSource = compras;
             }
@@ -95,6 +97,26 @@ namespace Stock_Sistemas
             frmF.Close();
 
             cargarTablaCompras();
+        }
+
+        private void btn_ImprimirCompras_Click(object sender, EventArgs e)
+        {
+            Reportes reporte = new Reportes() { Nombre = "Lista_Entradas"}.getByNombre();
+
+            if(reporte == null )
+            {
+                MessageBox.Show("El reporte seleccionado no existe.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information );
+                return;
+            }
+
+            StiReport stiReporte = new StiReport();
+            stiReporte.LoadFromString(reporte.XML);
+            stiReporte.ReportName = reporte.Nombre;
+            stiReporte.Dictionary.Databases.Clear();
+            stiReporte.Dictionary.Databases.Add(new StiSqlDatabase("Almacen Sistemas", DataAccess_Layer.Data.conString));
+            stiReporte.Dictionary.Variables.Add(new StiVariable("Fecha1", dtp_FechaInicial.Value.ToShortDateString()));
+            stiReporte.Dictionary.Variables.Add(new StiVariable("Fecha2", dtp_FechaFinal.Value.ToShortDateString()));
+            stiReporte.Show();
         }
     }
 }

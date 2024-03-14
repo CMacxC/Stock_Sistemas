@@ -151,12 +151,12 @@ namespace Stock_Sistemas
 
                 dgv_Lista.CurrentRow.Cells[5].Value = _iva;
                 dgv_Lista.CurrentRow.Cells[6].Value = totalImporte;
-                dgv_Lista.Columns[4].DefaultCellStyle.Format = "C2";
 
-                sumas += totalImporte - _iva;
+                sumas += totalImporte;
                 sumai += Convert.ToDecimal(dgv_Lista.CurrentRow.Cells[5].Value);
-                sumat += Convert.ToDecimal(dgv_Lista.CurrentRow.Cells[6].Value);
+                sumat += (Convert.ToDecimal(dgv_Lista.CurrentRow.Cells[6].Value) + Convert.ToDecimal(dgv_Lista.CurrentRow.Cells[5].Value));
 
+                dgv_Lista.Columns[4].DefaultCellStyle.Format = "C2";
                 lbl_SubTotal.Text = sumas.ToString("C");
                 lbl_TotalIVA.Text = sumai.ToString("C");
                 lbl_TotalImporte.Text = sumat.ToString("C");
@@ -199,6 +199,50 @@ namespace Stock_Sistemas
         private void p_Totales_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, this.p_Totales.ClientRectangle, System.Drawing.Color.WhiteSmoke, ButtonBorderStyle.Solid);
+        }
+
+        private void btn_Aceptar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                char[] moneda = { '$' };
+
+                if (new Compras()
+                {
+                    CFDI = txt_Factura.Text,
+                    Fecha_Compra = Convert.ToDateTime(txt_Fecha.Text),
+                    Proveedor = txt_Proveedor.Text,
+                    SubTotal = Convert.ToDecimal(lbl_SubTotal.Text.TrimStart(moneda)),
+                    IVA = Convert.ToDecimal(lbl_TotalIVA.Text.TrimStart(moneda)),
+                    Total = Convert.ToDecimal(lbl_TotalImporte.Text.TrimStart(moneda))
+                }.Insert() > 0)
+                {
+                    foreach (DataGridViewRow row in dgv_Lista.Rows)
+                    {
+                        new Detalle_Compras() { CFDI = txt_Factura.Text,
+                            Fecha = Convert.ToDateTime(txt_Fecha.Text),
+                            Producto = Convert.ToInt32(row.Cells[1].Value),
+                            Cantidad = Convert.ToInt32(row.Cells[0].Value),
+                            Precio_Unidad = Convert.ToDecimal(row.Cells[4].Value.ToString().TrimStart(moneda)),
+                            IVA = Convert.ToDecimal(row.Cells[5].Value.ToString().TrimStart(moneda)),
+                            Total = Convert.ToDecimal(row.Cells[6].Value.ToString().TrimStart(moneda))
+                        }.Insert();
+                    }
+
+                    MessageBox.Show("Compra guardada.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error durante el proceso. No se guardaron todos los registros.\n" + ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Close();
+            }
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
