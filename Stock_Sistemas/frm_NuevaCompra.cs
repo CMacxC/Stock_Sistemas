@@ -20,6 +20,7 @@ namespace Stock_Sistemas
         private Decimal sumas = 0;
         private Decimal sumai = 0;
         private Decimal sumat = 0;
+        public int estatus;
 
         public frm_NuevaCompra()
         {
@@ -114,6 +115,7 @@ namespace Stock_Sistemas
 
         private void btn_Cerrrar_Click(object sender, EventArgs e)
         {
+            this.estatus = 0;
             this.Close();
         }
 
@@ -230,6 +232,7 @@ namespace Stock_Sistemas
                     }
 
                     MessageBox.Show("Compra guardada.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.estatus = 1;
                     this.Close();
                 }
             }
@@ -242,6 +245,7 @@ namespace Stock_Sistemas
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
+            this.estatus = 0;
             this.Close();
         }
     }

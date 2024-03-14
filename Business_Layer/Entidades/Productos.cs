@@ -47,5 +47,36 @@ namespace Business_Layer
             param.Add("Estatus", Estatus);
             return data.Execute("stp_Productos_updateEstatus", param);
         }
+
+        public int Insert()
+        {
+            var param = new DynamicParameters();
+
+            param.Add("Nombre", Nombre);
+            param.Add("Modelo", Modelo);
+            param.Add("Marca", Marca);
+
+            return data.Execute("stp_Productos_Insert", param);
+        }
+
+        public int Update()
+        {
+            var param = new DynamicParameters();
+
+            param.Add("Id", Id_Producto);
+            param.Add("Nombre", Nombre);
+            param.Add("Modelo", Modelo);
+            param.Add("Marca", Marca);
+
+            return data.Execute("stp_Productos_Update", param);
+        }
+
+        public int Delete()
+        {
+            var param = new DynamicParameters();
+            param.Add("Producto", Id_Producto);
+
+            return data.Execute("stp_Productos_Delete", param);
+        }
     }
 }

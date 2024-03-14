@@ -51,3 +51,4 @@ C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\S
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.csproj.CopyComplete
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.exe
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.pdb
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_CatalogoMarcas.resources

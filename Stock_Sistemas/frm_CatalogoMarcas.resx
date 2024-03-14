@@ -117,22 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Elipse_Form.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAX1JREFUOE+t
-        k8tKw0AUQAPRheAiXXRtpEotviJNQRTs6Je4UwRpVgW1oCmKS/0HC8UH9VGw2i4m2KRBEfsLgthoW41/
-        MN4JIymdaDceOIsO9548SIV/QcGuNFN2k0rJldlRIKqZ1VD9QGI/fdSKi5TKJ5m6bRvsKBC1qhuqqde5
-        yG+BWXtfVi19G66MqfGq7sZNnXCRoEDC2lN+FoKkETbKB3otUxNWdtlbpnQHwqtzRnhlnlC9AQZ9B9wy
-        pTsQSi8YoXSSUL0BBtz2BbdM6Q5Im4sGSKjeQC+4QAYCWxAAvYEO+jR7R0zZWNBs/5vhA0uHIAGfvYEO
-        RK1miKkagRBiR3zgL0TNgoAFgSofmL75cCev23i82MKxqyaOFpp49OwNR04cPJxvYDnXwAMb94/i+t2X
-        oGH/EeC/oLAAgQCBAIldNkm08E4gQCLHDoEAkXOvZDDzYPavlRW26qOUIVJqoQlqsYXGzqkOGjkF8w6S
-        qUcvSNp9GmIr/4EgfAMd+CPoS5s+HAAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="btn_Cerrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAHxJREFUOE/N
@@ -141,10 +126,26 @@
         7U97ZyUAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="Elipse_btnCerrar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Elipse_Form.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="marcaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>433, 17</value>
+  </metadata>
+  <data name="resource.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQNJREFUOE+t
+        0r1Kw1AYgOFcgqudsnkFFrwKewluxakdOnVpFhcLFToUNJaT0L3gFRjxAuwmdBAaCmJBSvypBG3fniOf
+        Q2jzA/bdQs5zzglfrJ2nwPahppao/jctN+ZYXuU3AMdfgcZozFUMvS/oLri9mGPLsu2l4k/ovMN5xIMs
+        3ez32tmYs1d9wguOkGT+EicPt2bQfCYQkkxjrwCmMQUhyTR2iuB6yEhIssuYSh6uTeD0CU/IZt0Pgixc
+        Hf8sTh4zRmnm3H5jlIaPbsYcBpGS5emZUWkc/H2zubY5uXwXeQfD2X3pOszfJK2SG3r7bshuNnEn23+q
+        Ihlsq/mePP4ny1oDB0VvOMuNLowAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>134, 17</value>
   </metadata>
-  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>273, 17</value>
+  <metadata name="Elipse_btnCerrar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>294, 17</value>
   </metadata>
 </root>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,22 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Business_Layer;
 
 namespace Stock_Sistemas
 {
-    public partial class frm_AgregarConsumible : Form
+    public partial class frm_CatalogoMarcas : Form
     {
-        public int tipo;
-        private int idP;
+        public String idM;
+        public String NombreM;
 
-        public frm_AgregarConsumible(int id)
+        private Marca marca = new Marca();
+
+        public frm_CatalogoMarcas()
         {
             InitializeComponent();
 
-            this.idP = id;
-
-            cargarDatos();
+            cargarTabla();
         }
 
         #region Box-Shadow
@@ -109,70 +109,37 @@ namespace Stock_Sistemas
         }
         #endregion
 
-        private void cargarDatos()
-        {
-            if(idP > 0)
-            {
-                Productos producto = new Productos() { Id_Producto = idP }.getById();
-
-                if(producto != null)
-                {
-                    txt_Id.Text = idP.ToString();
-                    txt_Descripcion.Text = producto.Nombre;
-                    txt_Modelo.Text = producto.Modelo;
-                    txt_IdMarca.Text = producto.Marca.ToString();
-                }
-            }
-        }
-
         private void btn_Cerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btn_CatalogoMarcas_Click(object sender, EventArgs e)
+        private void cargarTabla()
         {
-            frm_CatalogoMarcas frmCM = new frm_CatalogoMarcas();
-            frmCM.ShowDialog();
+            marca.Descripcion = txt_Buscar.Text;
 
-            txt_IdMarca.Text = frmCM.idM;
-            lbl_DescripcionMarca.Text = frmCM.NombreM;
-        }
+            IEnumerable<Marca> listaMarcas = marca.getAll();
 
-        private void btn_Guardar_Click(object sender, EventArgs e)
-        {
-            //si tipo es igual a 1
-            //entonces se va a inserar un nuevo registro
-            if(tipo == 1)
+            if(listaMarcas.Count() > 0)
             {
-                if(new Productos() { Nombre = txt_Descripcion.Text,
-                                     Modelo = txt_Modelo.Text,
-                                     Marca = Convert.ToInt32(txt_IdMarca.Text),
-                }.Insert() > 0)
-                {
-                    MessageBox.Show("Producto agregado.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                }
-            }
-            //se actualizara un registro
-            else
-            {
-                if(new Productos()
-                {
-                    Id_Producto = Convert.ToInt32(txt_Id.Text),
-                    Nombre = txt_Descripcion.Text,
-                    Modelo = txt_Modelo.Text
-                }.Update() > 0)
-                {
-                    MessageBox.Show("Producto actualizado.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                }
+                marcaBindingSource.DataSource = listaMarcas;
             }
         }
 
-        private void btn_Cancelar_Click(object sender, EventArgs e)
+        private void txt_Buscar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            this.Close();
+            cargarTabla();
+        }
+
+        private void dgv_Marcas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dgv_Marcas.SelectedRows.Count > 0)
+            {
+                idM = dgv_Marcas.CurrentRow.Cells[0].Value.ToString();
+                NombreM = dgv_Marcas.CurrentRow.Cells[1].Value.ToString();
+
+                this.Close();
+            }
         }
     }
 }

@@ -72,9 +72,15 @@ namespace Stock_Sistemas
                     break;
 
                 case 5:
-                    frm_AgregarConsumible frmAC = new frm_AgregarConsumible();
+                    int id = Convert.ToInt32(dgv_Productos.CurrentRow.Cells[0].Value);
+
+                    frm_Fondo frmF = new frm_Fondo();
+                    frm_AgregarConsumible frmAC = new frm_AgregarConsumible(id);
                     frmAC.lbl_Titulo.Text = "Editar Consumible";
-                    frmAC.Show();
+                    frmAC.tipo = 2;
+                    frmF.Show();
+                    frmAC.ShowDialog();
+                    frmF.Close();
                     break;
 
                 case 6:
@@ -95,9 +101,10 @@ namespace Stock_Sistemas
 
         private void btn_NuevoMaterial_Click(object sender, EventArgs e)
         {
-            frm_AgregarConsumible frmAC = new frm_AgregarConsumible();
+            frm_AgregarConsumible frmAC = new frm_AgregarConsumible(0);
             frm_Fondo frmF = new frm_Fondo();
             frmAC.lbl_Titulo.Text = "Nuevo consumible";
+            frmAC.tipo = 1;
             frmF.Show();
             frmAC.ShowDialog();
             frmF.Close();

@@ -44,6 +44,7 @@
             this.btn_CatalogoMarcas = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.Elipse_btnCerrar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.lbl_DescripcionMarca = new Klik.Windows.Forms.v1.EntryLib.ELLabel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Id)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Descripcion)).BeginInit();
@@ -228,6 +229,7 @@
             this.btn_Guardar.TextStyle.Text = "Guardar";
             this.btn_Guardar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Guardar.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // btn_Cancelar
             // 
@@ -254,11 +256,12 @@
             this.btn_Cancelar.TextStyle.Text = "Cancelar";
             this.btn_Cancelar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Cancelar.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btn_CatalogoMarcas
             // 
             this.btn_CatalogoMarcas.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.btn_CatalogoMarcas.BackgroundStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(184)))));
+            this.btn_CatalogoMarcas.BackgroundStyle.SolidColor = System.Drawing.Color.White;
             this.btn_CatalogoMarcas.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
             this.btn_CatalogoMarcas.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
             this.btn_CatalogoMarcas.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
@@ -272,7 +275,8 @@
             this.btn_CatalogoMarcas.Location = new System.Drawing.Point(362, 186);
             this.btn_CatalogoMarcas.Name = "btn_CatalogoMarcas";
             this.btn_CatalogoMarcas.Size = new System.Drawing.Size(30, 30);
-            this.btn_CatalogoMarcas.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(123)))));
+            this.btn_CatalogoMarcas.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(184)))));
+            this.btn_CatalogoMarcas.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(184)))));
             this.btn_CatalogoMarcas.TabIndex = 8;
             this.btn_CatalogoMarcas.Tag = "Ver catlogo de marcas";
             this.btn_CatalogoMarcas.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -303,6 +307,13 @@
             this.lbl_DescripcionMarca.TabIndex = 9;
             this.lbl_DescripcionMarca.TabStop = false;
             this.lbl_DescripcionMarca.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // frm_AgregarConsumible
             // 
@@ -352,5 +363,6 @@
         private Klik.Windows.Forms.v1.EntryLib.ELButton btn_Cancelar;
         private Bunifu.Framework.UI.BunifuElipse Elipse_btnCerrar;
         private Klik.Windows.Forms.v1.EntryLib.ELLabel lbl_DescripcionMarca;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

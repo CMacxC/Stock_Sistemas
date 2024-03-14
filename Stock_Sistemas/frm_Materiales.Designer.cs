@@ -33,16 +33,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Materiales));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Materiales));
             this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Cerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.elipse_btnClose = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dgv_Productos = new System.Windows.Forms.DataGridView();
+            this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txt_Buscar = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
+            this.btn_NuevoMaterial = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.idProductoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modeloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,9 +53,6 @@
             this.estatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txt_Buscar = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
-            this.btn_NuevoMaterial = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Productos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
@@ -173,70 +173,6 @@
             this.dgv_Productos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Productos_CellContentClick);
             this.dgv_Productos.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView1_CurrentCellDirtyStateChanged);
             // 
-            // idProductoDataGridViewTextBoxColumn
-            // 
-            this.idProductoDataGridViewTextBoxColumn.DataPropertyName = "Id_Producto";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.idProductoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.idProductoDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idProductoDataGridViewTextBoxColumn.Name = "idProductoDataGridViewTextBoxColumn";
-            this.idProductoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idProductoDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nombreDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // modeloDataGridViewTextBoxColumn
-            // 
-            this.modeloDataGridViewTextBoxColumn.DataPropertyName = "Modelo";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.modeloDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.modeloDataGridViewTextBoxColumn.HeaderText = "Modelo";
-            this.modeloDataGridViewTextBoxColumn.Name = "modeloDataGridViewTextBoxColumn";
-            this.modeloDataGridViewTextBoxColumn.ReadOnly = true;
-            this.modeloDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // marcaDataGridViewTextBoxColumn
-            // 
-            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "Marca";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.marcaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
-            this.marcaDataGridViewTextBoxColumn.HeaderText = "Marca";
-            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
-            this.marcaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // estatusDataGridViewTextBoxColumn
-            // 
-            this.estatusDataGridViewTextBoxColumn.DataPropertyName = "Estatus";
-            this.estatusDataGridViewTextBoxColumn.FalseValue = "0";
-            this.estatusDataGridViewTextBoxColumn.HeaderText = "Estatus";
-            this.estatusDataGridViewTextBoxColumn.Name = "estatusDataGridViewTextBoxColumn";
-            this.estatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.estatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.estatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.estatusDataGridViewTextBoxColumn.TrueValue = "1";
-            // 
-            // Editar
-            // 
-            this.Editar.HeaderText = "";
-            this.Editar.Image = ((System.Drawing.Image)(resources.GetObject("Editar.Image")));
-            this.Editar.Name = "Editar";
-            this.Editar.ReadOnly = true;
-            this.Editar.Width = 50;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "";
-            this.Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar.Image")));
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Width = 50;
-            // 
             // productosBindingSource
             // 
             this.productosBindingSource.DataSource = typeof(Business_Layer.Consultas.cProductos);
@@ -295,6 +231,68 @@
             this.btn_NuevoMaterial.TextStyle.Text = "Agregar consumible";
             this.btn_NuevoMaterial.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
             this.btn_NuevoMaterial.Click += new System.EventHandler(this.btn_NuevoMaterial_Click);
+            // 
+            // idProductoDataGridViewTextBoxColumn
+            // 
+            this.idProductoDataGridViewTextBoxColumn.DataPropertyName = "Id_Producto";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.idProductoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.idProductoDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idProductoDataGridViewTextBoxColumn.Name = "idProductoDataGridViewTextBoxColumn";
+            this.idProductoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idProductoDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nombreDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // modeloDataGridViewTextBoxColumn
+            // 
+            this.modeloDataGridViewTextBoxColumn.DataPropertyName = "Modelo";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.modeloDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.modeloDataGridViewTextBoxColumn.HeaderText = "Modelo";
+            this.modeloDataGridViewTextBoxColumn.Name = "modeloDataGridViewTextBoxColumn";
+            this.modeloDataGridViewTextBoxColumn.ReadOnly = true;
+            this.modeloDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // marcaDataGridViewTextBoxColumn
+            // 
+            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "Marca";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.marcaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.marcaDataGridViewTextBoxColumn.HeaderText = "Marca";
+            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
+            this.marcaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // estatusDataGridViewTextBoxColumn
+            // 
+            this.estatusDataGridViewTextBoxColumn.DataPropertyName = "Estatus";
+            this.estatusDataGridViewTextBoxColumn.FalseValue = "0";
+            this.estatusDataGridViewTextBoxColumn.HeaderText = "Estatus";
+            this.estatusDataGridViewTextBoxColumn.Name = "estatusDataGridViewTextBoxColumn";
+            this.estatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estatusDataGridViewTextBoxColumn.TrueValue = "1";
+            // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "";
+            this.Editar.Image = ((System.Drawing.Image)(resources.GetObject("Editar.Image")));
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            this.Editar.Width = 50;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "";
+            this.Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar.Image")));
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Width = 50;
             // 
             // frm_Materiales
             // 

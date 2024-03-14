@@ -4,18 +4,15 @@ using Stimulsoft.Report;
 using Stimulsoft.Report.Dictionary;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Stock_Sistemas
 {
     public partial class frm_Compra : Form
     {
+        private int estatus;
+
         private Compras compra = new Compras();
 
         private IEnumerable<Compras> compras;
@@ -94,9 +91,13 @@ namespace Stock_Sistemas
             frm_Fondo frmF = new frm_Fondo();
             frmF.Show();
             frmNC.ShowDialog();
+            this.estatus = frmNC.estatus;
             frmF.Close();
 
-            cargarTablaCompras();
+            if(estatus == 1)
+            {
+                cargarTablaCompras();
+            }
         }
 
         private void btn_ImprimirCompras_Click(object sender, EventArgs e)

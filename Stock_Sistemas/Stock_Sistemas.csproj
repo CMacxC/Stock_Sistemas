@@ -98,6 +98,12 @@
     <Compile Include="frm_CatalogoConsumibles.Designer.cs">
       <DependentUpon>frm_CatalogoConsumibles.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_CatalogoMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CatalogoMarcas.Designer.cs">
+      <DependentUpon>frm_CatalogoMarcas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Compra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     <EmbeddedResource Include="frm_CatalogoConsumibles.resx">
       <DependentUpon>frm_CatalogoConsumibles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_CatalogoMarcas.resx">
+      <DependentUpon>frm_CatalogoMarcas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Compra.resx">
       <DependentUpon>frm_Compra.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +224,7 @@
     <None Include="Properties\DataSources\Business_Layer.Consultas.Salidas.datasource" />
     <None Include="Properties\DataSources\Business_Layer.Consultas.Stock.datasource" />
     <None Include="Properties\DataSources\Business_Layer.Entidades.Reportes.datasource" />
+    <None Include="Properties\DataSources\Business_Layer.Marca.datasource" />
     <None Include="Properties\DataSources\Business_Layer.Movimientos.datasource" />
     <None Include="Properties\DataSources\Business_Layer.Productos.datasource" />
     <None Include="Properties\DataSources\Business_Layer.Salidas.datasource" />
