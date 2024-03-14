@@ -85,5 +85,16 @@ namespace Stock_Sistemas
                 cargarTablaCompras();
             }
         }
+
+        private void txt_NCompra_Click(object sender, EventArgs e)
+        {
+            frm_NuevaCompra frmNC = new frm_NuevaCompra();
+            frm_Fondo frmF = new frm_Fondo();
+            frmF.Show();
+            frmNC.ShowDialog();
+            frmF.Close();
+
+            cargarTablaCompras();
+        }
     }
 }

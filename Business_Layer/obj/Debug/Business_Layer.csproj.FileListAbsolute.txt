@@ -1,11 +1,11 @@
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\Business_Layer.dll
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\Business_Layer.pdb
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\Dapper.dll
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\DataAccess_Layer.dll
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\DataAccess_Layer.pdb
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\Dapper.xml
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\Business_Layer.csproj.AssemblyReference.cache
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\Business_Layer.csproj.CoreCompileInputs.cache
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\Business_Layer.csproj.CopyComplete
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\Business_Layer.dll
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\obj\Debug\Business_Layer.pdb
-C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\DataAccess_Layer.dll
-C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Business_Layer\bin\Debug\DataAccess_Layer.pdb

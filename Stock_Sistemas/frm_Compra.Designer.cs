@@ -46,11 +46,13 @@
             this.Elipse_btnCerrar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.p_Opciones = new System.Windows.Forms.Panel();
-            this.dgv_Compras = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dtp_FechaInicial = new System.Windows.Forms.DateTimePicker();
+            this.btn_ImprimirCompras = new Klik.Windows.Forms.v1.EntryLib.ELButton();
+            this.txt_NCompra = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.dtp_FechaFinal = new System.Windows.Forms.DateTimePicker();
+            this.dtp_FechaInicial = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dgv_Compras = new System.Windows.Forms.DataGridView();
             this.idCompraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cFDIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaCompraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,14 +61,12 @@
             this.iVADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txt_NCompra = new Klik.Windows.Forms.v1.EntryLib.ELButton();
-            this.btn_ImprimirCompras = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.p_BarraTitulo.SuspendLayout();
             this.p_Opciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ImprimirCompras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_NCompra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Compras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_NCompra)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ImprimirCompras)).BeginInit();
             this.SuspendLayout();
             // 
             // p_BarraTitulo
@@ -140,6 +140,97 @@
             this.p_Opciones.TabIndex = 1;
             this.p_Opciones.Paint += new System.Windows.Forms.PaintEventHandler(this.dgv_Compras_Paint);
             // 
+            // btn_ImprimirCompras
+            // 
+            this.btn_ImprimirCompras.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.btn_ImprimirCompras.BackgroundStyle.SolidColor = System.Drawing.Color.White;
+            this.btn_ImprimirCompras.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.btn_ImprimirCompras.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.btn_ImprimirCompras.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.btn_ImprimirCompras.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.btn_ImprimirCompras.BorderStyle.SolidColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_ImprimirCompras.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.btn_ImprimirCompras.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.btn_ImprimirCompras.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btn_ImprimirCompras.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ImprimirCompras.Location = new System.Drawing.Point(172, 16);
+            this.btn_ImprimirCompras.Name = "btn_ImprimirCompras";
+            this.btn_ImprimirCompras.Size = new System.Drawing.Size(216, 30);
+            this.btn_ImprimirCompras.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_ImprimirCompras.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_ImprimirCompras.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.White;
+            this.btn_ImprimirCompras.TabIndex = 5;
+            this.btn_ImprimirCompras.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ImprimirCompras.TextStyle.Text = "Imprimir lista de compra";
+            this.btn_ImprimirCompras.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ImprimirCompras.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            // 
+            // txt_NCompra
+            // 
+            this.txt_NCompra.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.txt_NCompra.BackgroundStyle.SolidColor = System.Drawing.Color.White;
+            this.txt_NCompra.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_NCompra.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_NCompra.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_NCompra.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_NCompra.BorderStyle.SolidColor = System.Drawing.Color.Green;
+            this.txt_NCompra.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.txt_NCompra.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.txt_NCompra.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.txt_NCompra.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_NCompra.Location = new System.Drawing.Point(15, 16);
+            this.txt_NCompra.Name = "txt_NCompra";
+            this.txt_NCompra.Size = new System.Drawing.Size(132, 30);
+            this.txt_NCompra.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.Green;
+            this.txt_NCompra.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.Green;
+            this.txt_NCompra.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.White;
+            this.txt_NCompra.TabIndex = 4;
+            this.txt_NCompra.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NCompra.TextStyle.Text = "Nueva compra";
+            this.txt_NCompra.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_NCompra.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.txt_NCompra.Click += new System.EventHandler(this.txt_NCompra_Click);
+            // 
+            // dtp_FechaFinal
+            // 
+            this.dtp_FechaFinal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_FechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_FechaFinal.Location = new System.Drawing.Point(548, 53);
+            this.dtp_FechaFinal.Name = "dtp_FechaFinal";
+            this.dtp_FechaFinal.Size = new System.Drawing.Size(110, 25);
+            this.dtp_FechaFinal.TabIndex = 3;
+            this.dtp_FechaFinal.ValueChanged += new System.EventHandler(this.dtp_FechaFinal_ValueChanged);
+            // 
+            // dtp_FechaInicial
+            // 
+            this.dtp_FechaInicial.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_FechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_FechaInicial.Location = new System.Drawing.Point(548, 16);
+            this.dtp_FechaInicial.Name = "dtp_FechaInicial";
+            this.dtp_FechaInicial.Size = new System.Drawing.Size(110, 25);
+            this.dtp_FechaInicial.TabIndex = 2;
+            this.dtp_FechaInicial.ValueChanged += new System.EventHandler(this.dtp_FechaInicial_ValueChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(458, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Fecha Final:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(458, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Fecha Inicial:";
+            // 
             // dgv_Compras
             // 
             this.dgv_Compras.AllowUserToAddRows = false;
@@ -194,46 +285,6 @@
             this.dgv_Compras.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Compras.Size = new System.Drawing.Size(675, 260);
             this.dgv_Compras.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(458, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Fecha Inicial:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(458, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Fecha Final:";
-            // 
-            // dtp_FechaInicial
-            // 
-            this.dtp_FechaInicial.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_FechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_FechaInicial.Location = new System.Drawing.Point(548, 16);
-            this.dtp_FechaInicial.Name = "dtp_FechaInicial";
-            this.dtp_FechaInicial.Size = new System.Drawing.Size(110, 25);
-            this.dtp_FechaInicial.TabIndex = 2;
-            this.dtp_FechaInicial.ValueChanged += new System.EventHandler(this.dtp_FechaInicial_ValueChanged);
-            // 
-            // dtp_FechaFinal
-            // 
-            this.dtp_FechaFinal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_FechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_FechaFinal.Location = new System.Drawing.Point(548, 53);
-            this.dtp_FechaFinal.Name = "dtp_FechaFinal";
-            this.dtp_FechaFinal.Size = new System.Drawing.Size(110, 25);
-            this.dtp_FechaFinal.TabIndex = 3;
-            this.dtp_FechaFinal.ValueChanged += new System.EventHandler(this.dtp_FechaFinal_ValueChanged);
             // 
             // idCompraDataGridViewTextBoxColumn
             // 
@@ -308,50 +359,6 @@
             // 
             this.comprasBindingSource.DataSource = typeof(Business_Layer.Compras);
             // 
-            // txt_NCompra
-            // 
-            this.txt_NCompra.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.txt_NCompra.BackgroundStyle.SolidColor = System.Drawing.Color.White;
-            this.txt_NCompra.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_NCompra.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_NCompra.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_NCompra.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_NCompra.BorderStyle.SolidColor = System.Drawing.Color.Green;
-            this.txt_NCompra.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.txt_NCompra.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.txt_NCompra.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.txt_NCompra.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txt_NCompra.Location = new System.Drawing.Point(15, 16);
-            this.txt_NCompra.Name = "txt_NCompra";
-            this.txt_NCompra.Size = new System.Drawing.Size(132, 30);
-            this.txt_NCompra.TabIndex = 4;
-            this.txt_NCompra.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NCompra.TextStyle.Text = "Nueva compra";
-            this.txt_NCompra.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txt_NCompra.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
-            // 
-            // btn_ImprimirCompras
-            // 
-            this.btn_ImprimirCompras.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.btn_ImprimirCompras.BackgroundStyle.SolidColor = System.Drawing.Color.White;
-            this.btn_ImprimirCompras.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.btn_ImprimirCompras.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.btn_ImprimirCompras.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.btn_ImprimirCompras.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.btn_ImprimirCompras.BorderStyle.SolidColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_ImprimirCompras.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.btn_ImprimirCompras.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.btn_ImprimirCompras.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btn_ImprimirCompras.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ImprimirCompras.Location = new System.Drawing.Point(172, 16);
-            this.btn_ImprimirCompras.Name = "btn_ImprimirCompras";
-            this.btn_ImprimirCompras.Size = new System.Drawing.Size(216, 30);
-            this.btn_ImprimirCompras.TabIndex = 5;
-            this.btn_ImprimirCompras.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ImprimirCompras.TextStyle.Text = "Imprimir lista de compra";
-            this.btn_ImprimirCompras.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ImprimirCompras.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
-            // 
             // frm_Compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,10 +377,10 @@
             this.p_BarraTitulo.PerformLayout();
             this.p_Opciones.ResumeLayout(false);
             this.p_Opciones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ImprimirCompras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_NCompra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Compras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_NCompra)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ImprimirCompras)).EndInit();
             this.ResumeLayout(false);
 
         }

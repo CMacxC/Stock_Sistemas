@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Business_Layer.Entidades;
 using Dapper;
 using DataAccess_Layer;
 
@@ -28,6 +29,15 @@ namespace Business_Layer
             param.Add("Nombre", Nombre);
 
             return data.Query<Productos>("stp_Productos_getByNombre", param);
+        }
+
+        public Productos getById()
+        {
+            var param = new DynamicParameters();
+
+            param.Add("IdP", Id_Producto);
+
+            return data.QuerySingle<Productos>("stp_Productos_getById", param);
         }
 
         public int updateEstatus()
