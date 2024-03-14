@@ -161,7 +161,8 @@ namespace Stock_Sistemas
                 {
                     Id_Producto = Convert.ToInt32(txt_Id.Text),
                     Nombre = txt_Descripcion.Text,
-                    Modelo = txt_Modelo.Text
+                    Modelo = txt_Modelo.Text,
+                    Marca = Convert.ToInt32(txt_IdMarca.Text)
                 }.Update() > 0)
                 {
                     MessageBox.Show("Producto actualizado.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -173,6 +174,11 @@ namespace Stock_Sistemas
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frm_AgregarConsumible_Load(object sender, EventArgs e)
+        {
+            txt_Id.Focus();
         }
     }
 }

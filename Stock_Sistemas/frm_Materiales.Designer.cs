@@ -33,19 +33,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Materiales));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Materiales));
             this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Cerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.elipse_btnClose = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dgv_Productos = new System.Windows.Forms.DataGridView();
-            this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txt_Buscar = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
-            this.btn_NuevoMaterial = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.idProductoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modeloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +50,9 @@
             this.estatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txt_Buscar = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
+            this.btn_NuevoMaterial = new Klik.Windows.Forms.v1.EntryLib.ELButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Productos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
@@ -74,7 +74,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(729, 30);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 3;
             // 
             // btn_Cerrar
             // 
@@ -173,65 +173,6 @@
             this.dgv_Productos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Productos_CellContentClick);
             this.dgv_Productos.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView1_CurrentCellDirtyStateChanged);
             // 
-            // productosBindingSource
-            // 
-            this.productosBindingSource.DataSource = typeof(Business_Layer.Consultas.cProductos);
-            // 
-            // txt_Buscar
-            // 
-            this.txt_Buscar.CaptionStyle.BackgroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txt_Buscar.CaptionStyle.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Transparent;
-            this.txt_Buscar.CaptionStyle.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_Buscar.CaptionStyle.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_Buscar.CaptionStyle.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_Buscar.CaptionStyle.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_Buscar.CaptionStyle.BorderStyle.SolidColor = System.Drawing.Color.Transparent;
-            this.txt_Buscar.CaptionStyle.CaptionSize = 30;
-            this.txt_Buscar.CaptionStyle.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.txt_Buscar.CaptionStyle.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.txt_Buscar.CaptionStyle.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.txt_Buscar.CaptionStyle.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.txt_Buscar.EditBoxStyle.BorderStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_Buscar.EditBoxStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Buscar.EditBoxStyle.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txt_Buscar.Location = new System.Drawing.Point(15, 50);
-            this.txt_Buscar.Name = "txt_Buscar";
-            this.txt_Buscar.Size = new System.Drawing.Size(255, 30);
-            this.txt_Buscar.TabIndex = 2;
-            this.txt_Buscar.ValidationStyle.PasswordChar = '\0';
-            this.txt_Buscar.Value = "";
-            this.txt_Buscar.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
-            this.txt_Buscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Buscar_KeyPress);
-            // 
-            // btn_NuevoMaterial
-            // 
-            this.btn_NuevoMaterial.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.btn_NuevoMaterial.BackgroundStyle.SolidColor = System.Drawing.Color.White;
-            this.btn_NuevoMaterial.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.btn_NuevoMaterial.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.btn_NuevoMaterial.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.btn_NuevoMaterial.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
-            this.btn_NuevoMaterial.BorderStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(92)))));
-            this.btn_NuevoMaterial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_NuevoMaterial.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
-            this.btn_NuevoMaterial.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
-            this.btn_NuevoMaterial.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btn_NuevoMaterial.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_NuevoMaterial.Location = new System.Drawing.Point(563, 50);
-            this.btn_NuevoMaterial.Name = "btn_NuevoMaterial";
-            this.btn_NuevoMaterial.Size = new System.Drawing.Size(154, 30);
-            this.btn_NuevoMaterial.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(66)))));
-            this.btn_NuevoMaterial.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.White;
-            this.btn_NuevoMaterial.TabIndex = 3;
-            this.btn_NuevoMaterial.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NuevoMaterial.TextStyle.Text = "Agregar consumible";
-            this.btn_NuevoMaterial.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
-            this.btn_NuevoMaterial.Click += new System.EventHandler(this.btn_NuevoMaterial_Click);
-            // 
             // idProductoDataGridViewTextBoxColumn
             // 
             this.idProductoDataGridViewTextBoxColumn.DataPropertyName = "Id_Producto";
@@ -293,6 +234,65 @@
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.ReadOnly = true;
             this.Eliminar.Width = 50;
+            // 
+            // productosBindingSource
+            // 
+            this.productosBindingSource.DataSource = typeof(Business_Layer.Consultas.cProductos);
+            // 
+            // txt_Buscar
+            // 
+            this.txt_Buscar.CaptionStyle.BackgroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txt_Buscar.CaptionStyle.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Transparent;
+            this.txt_Buscar.CaptionStyle.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.CaptionStyle.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.CaptionStyle.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.CaptionStyle.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.CaptionStyle.BorderStyle.SolidColor = System.Drawing.Color.Transparent;
+            this.txt_Buscar.CaptionStyle.CaptionSize = 30;
+            this.txt_Buscar.CaptionStyle.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.txt_Buscar.CaptionStyle.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.txt_Buscar.CaptionStyle.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.txt_Buscar.CaptionStyle.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.txt_Buscar.EditBoxStyle.BorderStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_Buscar.EditBoxStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Buscar.EditBoxStyle.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txt_Buscar.Location = new System.Drawing.Point(15, 50);
+            this.txt_Buscar.Name = "txt_Buscar";
+            this.txt_Buscar.Size = new System.Drawing.Size(255, 30);
+            this.txt_Buscar.TabIndex = 0;
+            this.txt_Buscar.ValidationStyle.PasswordChar = '\0';
+            this.txt_Buscar.Value = "";
+            this.txt_Buscar.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
+            this.txt_Buscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Buscar_KeyPress);
+            // 
+            // btn_NuevoMaterial
+            // 
+            this.btn_NuevoMaterial.BackgroundStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.btn_NuevoMaterial.BackgroundStyle.SolidColor = System.Drawing.Color.White;
+            this.btn_NuevoMaterial.BorderStyle.BorderShape.BottomLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.btn_NuevoMaterial.BorderStyle.BorderShape.BottomRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.btn_NuevoMaterial.BorderStyle.BorderShape.TopLeft = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.btn_NuevoMaterial.BorderStyle.BorderShape.TopRight = Klik.Windows.Forms.v1.Common.BorderShapes.Chamfer;
+            this.btn_NuevoMaterial.BorderStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(92)))));
+            this.btn_NuevoMaterial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_NuevoMaterial.FlashStyle.PaintType = Klik.Windows.Forms.v1.Common.PaintTypes.Solid;
+            this.btn_NuevoMaterial.FlashStyle.SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(240)))), ((int)(((byte)(191)))));
+            this.btn_NuevoMaterial.ForegroundImageStyle.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btn_NuevoMaterial.ForegroundImageStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_NuevoMaterial.Location = new System.Drawing.Point(563, 50);
+            this.btn_NuevoMaterial.Name = "btn_NuevoMaterial";
+            this.btn_NuevoMaterial.Size = new System.Drawing.Size(154, 30);
+            this.btn_NuevoMaterial.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(66)))));
+            this.btn_NuevoMaterial.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.White;
+            this.btn_NuevoMaterial.TabIndex = 2;
+            this.btn_NuevoMaterial.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NuevoMaterial.TextStyle.Text = "Agregar consumible";
+            this.btn_NuevoMaterial.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
+            this.btn_NuevoMaterial.Click += new System.EventHandler(this.btn_NuevoMaterial_Click);
             // 
             // frm_Materiales
             // 

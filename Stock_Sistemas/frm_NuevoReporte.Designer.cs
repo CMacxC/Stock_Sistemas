@@ -60,7 +60,7 @@
             this.p_BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.p_BarraTitulo.Name = "p_BarraTitulo";
             this.p_BarraTitulo.Size = new System.Drawing.Size(319, 30);
-            this.p_BarraTitulo.TabIndex = 0;
+            this.p_BarraTitulo.TabIndex = 6;
             // 
             // btn_Cerrar
             // 
@@ -117,7 +117,7 @@
             this.txt_Nombre.Location = new System.Drawing.Point(15, 46);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(251, 30);
-            this.txt_Nombre.TabIndex = 1;
+            this.txt_Nombre.TabIndex = 0;
             this.txt_Nombre.ValidationStyle.PasswordChar = '\0';
             this.txt_Nombre.Value = "";
             this.txt_Nombre.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -141,7 +141,7 @@
             this.txt_Reporte.Location = new System.Drawing.Point(15, 102);
             this.txt_Reporte.Name = "txt_Reporte";
             this.txt_Reporte.Size = new System.Drawing.Size(251, 30);
-            this.txt_Reporte.TabIndex = 2;
+            this.txt_Reporte.TabIndex = 1;
             this.txt_Reporte.ValidationStyle.PasswordChar = '\0';
             this.txt_Reporte.Value = "";
             this.txt_Reporte.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -185,7 +185,7 @@
             this.btn_Archivos.Size = new System.Drawing.Size(30, 30);
             this.btn_Archivos.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.White;
             this.btn_Archivos.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.Black;
-            this.btn_Archivos.TabIndex = 4;
+            this.btn_Archivos.TabIndex = 2;
             this.btn_Archivos.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Archivos.TextStyle.ForeColor = System.Drawing.Color.White;
             this.btn_Archivos.TextStyle.Text = "...";
@@ -211,7 +211,7 @@
             this.btn_Guardar.Size = new System.Drawing.Size(80, 30);
             this.btn_Guardar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.White;
             this.btn_Guardar.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.Black;
-            this.btn_Guardar.TabIndex = 5;
+            this.btn_Guardar.TabIndex = 4;
             this.btn_Guardar.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Guardar.TextStyle.ForeColor = System.Drawing.Color.White;
             this.btn_Guardar.TextStyle.Text = "Guardar";
@@ -233,7 +233,7 @@
             this.btn_Cancelar.Size = new System.Drawing.Size(80, 30);
             this.btn_Cancelar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.White;
             this.btn_Cancelar.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.Red;
-            this.btn_Cancelar.TabIndex = 6;
+            this.btn_Cancelar.TabIndex = 5;
             this.btn_Cancelar.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancelar.TextStyle.ForeColor = System.Drawing.Color.White;
             this.btn_Cancelar.TextStyle.Text = "Cancelar";

@@ -132,9 +132,10 @@
             this.txt_Folio.Location = new System.Drawing.Point(15, 49);
             this.txt_Folio.Name = "txt_Folio";
             this.txt_Folio.Size = new System.Drawing.Size(180, 30);
-            this.txt_Folio.TabIndex = 1;
+            this.txt_Folio.TabIndex = 0;
             this.txt_Folio.ValidationStyle.PasswordChar = '\0';
-            this.txt_Folio.Value = "";
+            this.txt_Folio.ValidationStyle.ValidationType = Klik.Windows.Forms.v1.EntryLib.ValidationTypes.Numeric;
+            this.txt_Folio.Value = 0;
             this.txt_Folio.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             this.txt_Folio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Folio_KeyDown);
             // 
@@ -158,7 +159,7 @@
             this.txt_Cantidad.Location = new System.Drawing.Point(15, 153);
             this.txt_Cantidad.Name = "txt_Cantidad";
             this.txt_Cantidad.Size = new System.Drawing.Size(180, 30);
-            this.txt_Cantidad.TabIndex = 2;
+            this.txt_Cantidad.TabIndex = 4;
             this.txt_Cantidad.ValidationStyle.PasswordChar = '\0';
             this.txt_Cantidad.Value = "";
             this.txt_Cantidad.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -184,7 +185,7 @@
             this.txt_ClaveProducto.Location = new System.Drawing.Point(15, 101);
             this.txt_ClaveProducto.Name = "txt_ClaveProducto";
             this.txt_ClaveProducto.Size = new System.Drawing.Size(180, 30);
-            this.txt_ClaveProducto.TabIndex = 3;
+            this.txt_ClaveProducto.TabIndex = 1;
             this.txt_ClaveProducto.ValidationStyle.PasswordChar = '\0';
             this.txt_ClaveProducto.Value = "";
             this.txt_ClaveProducto.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -210,7 +211,7 @@
             this.txt_DProducto.Location = new System.Drawing.Point(201, 101);
             this.txt_DProducto.Name = "txt_DProducto";
             this.txt_DProducto.Size = new System.Drawing.Size(180, 30);
-            this.txt_DProducto.TabIndex = 4;
+            this.txt_DProducto.TabIndex = 2;
             this.txt_DProducto.ValidationStyle.PasswordChar = '\0';
             this.txt_DProducto.Value = "";
             this.txt_DProducto.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -234,7 +235,7 @@
             this.btn_CatalogoProductos.Size = new System.Drawing.Size(30, 30);
             this.btn_CatalogoProductos.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btn_CatalogoProductos.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_CatalogoProductos.TabIndex = 5;
+            this.btn_CatalogoProductos.TabIndex = 3;
             this.btn_CatalogoProductos.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_CatalogoProductos.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
             this.btn_CatalogoProductos.Click += new System.EventHandler(this.btn_CatalogoProductos_Click);
@@ -246,7 +247,7 @@
             this.label2.Location = new System.Drawing.Point(18, 205);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 6;
+            this.label2.TabIndex = 9;
             this.label2.Text = "Fecha:";
             // 
             // dtp_FechaSalida
@@ -257,7 +258,7 @@
             this.dtp_FechaSalida.Location = new System.Drawing.Point(97, 200);
             this.dtp_FechaSalida.Name = "dtp_FechaSalida";
             this.dtp_FechaSalida.Size = new System.Drawing.Size(114, 25);
-            this.dtp_FechaSalida.TabIndex = 7;
+            this.dtp_FechaSalida.TabIndex = 5;
             this.dtp_FechaSalida.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtp_FechaSalida_KeyDown);
             // 
             // txt_Recibio
@@ -279,7 +280,7 @@
             this.txt_Recibio.Location = new System.Drawing.Point(15, 244);
             this.txt_Recibio.Name = "txt_Recibio";
             this.txt_Recibio.Size = new System.Drawing.Size(196, 30);
-            this.txt_Recibio.TabIndex = 8;
+            this.txt_Recibio.TabIndex = 6;
             this.txt_Recibio.ValidationStyle.PasswordChar = '\0';
             this.txt_Recibio.Value = "";
             this.txt_Recibio.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -304,7 +305,7 @@
             this.btn_Aceptar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Aceptar.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Aceptar.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.White;
-            this.btn_Aceptar.TabIndex = 9;
+            this.btn_Aceptar.TabIndex = 7;
             this.btn_Aceptar.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Aceptar.TextStyle.Text = "Aceptar";
             this.btn_Aceptar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,7 +332,7 @@
             this.btn_Cancelar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.Maroon;
             this.btn_Cancelar.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.Maroon;
             this.btn_Cancelar.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.White;
-            this.btn_Cancelar.TabIndex = 10;
+            this.btn_Cancelar.TabIndex = 8;
             this.btn_Cancelar.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancelar.TextStyle.ForeColor = System.Drawing.Color.Maroon;
             this.btn_Cancelar.TextStyle.Text = "Cancelar";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Principal));
             this.pMenu = new System.Windows.Forms.Panel();
             this.btn_Reportes = new FontAwesome.Sharp.IconButton();
             this.btn_Materiales = new FontAwesome.Sharp.IconButton();
@@ -199,7 +200,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Moccasin;
-            this.label1.Location = new System.Drawing.Point(12, 61);
+            this.label1.Location = new System.Drawing.Point(12, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 54);
             this.label1.TabIndex = 1;
@@ -208,9 +209,10 @@
             // 
             // pbLogo
             // 
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
             this.pbLogo.Location = new System.Drawing.Point(12, 10);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(195, 48);
+            this.pbLogo.Size = new System.Drawing.Size(195, 58);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogo.TabIndex = 0;
             this.pbLogo.TabStop = false;
@@ -336,6 +338,7 @@
             this.Controls.Add(this.pContainer);
             this.Controls.Add(this.pBar);
             this.Controls.Add(this.pMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Principal";
             this.Text = "Stock_Sistemas";
             this.Load += new System.EventHandler(this.frm_Principal_Load);

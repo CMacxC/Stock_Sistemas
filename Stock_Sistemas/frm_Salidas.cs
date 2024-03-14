@@ -34,10 +34,15 @@ namespace Stock_Sistemas
 
         private void Fechas()
         {
-            var fecha = func.Periodo(DateTime.Now);
+            DateTime fecha = DateTime.Now;
 
-            dtp_FechaInicial.Text = fecha[0].ToString();
-            dtp_FechaFinal.Text = fecha[1].ToString();
+            DateTime dia1 = new DateTime(fecha.Year, fecha.Month, 1);
+
+            DateTime lastDay = dia1.AddMonths(1).AddDays(-1);
+
+            dtp_FechaInicial.Text = dia1.ToString();
+
+            dtp_FechaFinal.Text = lastDay.ToString();
         }
 
         private void p_Opciones_Paint(object sender, PaintEventArgs e)

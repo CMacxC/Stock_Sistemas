@@ -71,7 +71,7 @@
             this.p_BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.p_BarraTitulo.Name = "p_BarraTitulo";
             this.p_BarraTitulo.Size = new System.Drawing.Size(686, 30);
-            this.p_BarraTitulo.TabIndex = 0;
+            this.p_BarraTitulo.TabIndex = 3;
             // 
             // btn_Cerrar
             // 
@@ -95,7 +95,7 @@
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 17);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Almacén";
             // 
             // dgv_Almacen
@@ -255,7 +255,7 @@
             this.txt_Buscar.Location = new System.Drawing.Point(15, 56);
             this.txt_Buscar.Name = "txt_Buscar";
             this.txt_Buscar.Size = new System.Drawing.Size(330, 30);
-            this.txt_Buscar.TabIndex = 3;
+            this.txt_Buscar.TabIndex = 0;
             this.txt_Buscar.ValidationStyle.PasswordChar = '\0';
             this.txt_Buscar.Value = "";
             this.txt_Buscar.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;

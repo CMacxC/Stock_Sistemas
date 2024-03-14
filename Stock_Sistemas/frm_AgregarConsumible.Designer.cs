@@ -121,9 +121,14 @@
             this.txt_Id.Location = new System.Drawing.Point(15, 48);
             this.txt_Id.Name = "txt_Id";
             this.txt_Id.Size = new System.Drawing.Size(180, 30);
-            this.txt_Id.TabIndex = 1;
+            this.txt_Id.TabIndex = 8;
+            this.txt_Id.ValidationStyle.MaskValidationStyle.Mask = "0";
+            this.txt_Id.ValidationStyle.NumericValidationStyle.DecimalSeparator = ".";
+            this.txt_Id.ValidationStyle.NumericValidationStyle.FormatType = Klik.Windows.Forms.v1.EntryLib.NumericFormatTypes.Numeric;
+            this.txt_Id.ValidationStyle.NumericValidationStyle.ThousandSeparator = ",";
             this.txt_Id.ValidationStyle.PasswordChar = '\0';
-            this.txt_Id.Value = "";
+            this.txt_Id.ValidationStyle.ValidationType = Klik.Windows.Forms.v1.EntryLib.ValidationTypes.Numeric;
+            this.txt_Id.Value = 0;
             this.txt_Id.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
             // txt_Descripcion
@@ -146,7 +151,7 @@
             this.txt_Descripcion.Location = new System.Drawing.Point(15, 94);
             this.txt_Descripcion.Name = "txt_Descripcion";
             this.txt_Descripcion.Size = new System.Drawing.Size(342, 30);
-            this.txt_Descripcion.TabIndex = 2;
+            this.txt_Descripcion.TabIndex = 0;
             this.txt_Descripcion.ValidationStyle.PasswordChar = '\0';
             this.txt_Descripcion.Value = "";
             this.txt_Descripcion.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -172,7 +177,7 @@
             this.txt_Modelo.Location = new System.Drawing.Point(15, 140);
             this.txt_Modelo.Name = "txt_Modelo";
             this.txt_Modelo.Size = new System.Drawing.Size(342, 30);
-            this.txt_Modelo.TabIndex = 3;
+            this.txt_Modelo.TabIndex = 1;
             this.txt_Modelo.ValidationStyle.PasswordChar = '\0';
             this.txt_Modelo.Value = "";
             this.txt_Modelo.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -199,7 +204,7 @@
             this.txt_IdMarca.Location = new System.Drawing.Point(15, 186);
             this.txt_IdMarca.Name = "txt_IdMarca";
             this.txt_IdMarca.Size = new System.Drawing.Size(156, 30);
-            this.txt_IdMarca.TabIndex = 4;
+            this.txt_IdMarca.TabIndex = 2;
             this.txt_IdMarca.ValidationStyle.PasswordChar = '\0';
             this.txt_IdMarca.Value = "";
             this.txt_IdMarca.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -223,7 +228,7 @@
             this.btn_Guardar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.White;
             this.btn_Guardar.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(62)))), ((int)(((byte)(92)))));
             this.btn_Guardar.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.Black;
-            this.btn_Guardar.TabIndex = 6;
+            this.btn_Guardar.TabIndex = 5;
             this.btn_Guardar.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Guardar.TextStyle.ForeColor = System.Drawing.Color.White;
             this.btn_Guardar.TextStyle.Text = "Guardar";
@@ -250,7 +255,7 @@
             this.btn_Cancelar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.White;
             this.btn_Cancelar.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(168)))), ((int)(((byte)(172)))));
             this.btn_Cancelar.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_Cancelar.TabIndex = 7;
+            this.btn_Cancelar.TabIndex = 6;
             this.btn_Cancelar.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancelar.TextStyle.ForeColor = System.Drawing.Color.White;
             this.btn_Cancelar.TextStyle.Text = "Cancelar";
@@ -277,7 +282,7 @@
             this.btn_CatalogoMarcas.Size = new System.Drawing.Size(30, 30);
             this.btn_CatalogoMarcas.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(184)))));
             this.btn_CatalogoMarcas.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(184)))));
-            this.btn_CatalogoMarcas.TabIndex = 8;
+            this.btn_CatalogoMarcas.TabIndex = 4;
             this.btn_CatalogoMarcas.Tag = "Ver catlogo de marcas";
             this.btn_CatalogoMarcas.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_CatalogoMarcas.VisualStyle = Klik.Windows.Forms.v1.EntryLib.ButtonVisualStyles.Custom;
@@ -304,7 +309,7 @@
             this.lbl_DescripcionMarca.Location = new System.Drawing.Point(172, 187);
             this.lbl_DescripcionMarca.Name = "lbl_DescripcionMarca";
             this.lbl_DescripcionMarca.Size = new System.Drawing.Size(180, 28);
-            this.lbl_DescripcionMarca.TabIndex = 9;
+            this.lbl_DescripcionMarca.TabIndex = 3;
             this.lbl_DescripcionMarca.TabStop = false;
             this.lbl_DescripcionMarca.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
             // 
@@ -334,6 +339,7 @@
             this.Name = "frm_AgregarConsumible";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Consumible";
+            this.Load += new System.EventHandler(this.frm_AgregarConsumible_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Id)).EndInit();

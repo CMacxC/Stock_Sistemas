@@ -81,6 +81,7 @@ namespace Stock_Sistemas
                     frmF.Show();
                     frmAC.ShowDialog();
                     frmF.Close();
+                    cargarTabla();
                     break;
 
                 case 6:
@@ -112,6 +113,8 @@ namespace Stock_Sistemas
             frmF.Show();
             frmAC.ShowDialog();
             frmF.Close();
+
+            cargarTabla();
 
         }
     }

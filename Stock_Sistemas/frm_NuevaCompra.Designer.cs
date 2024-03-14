@@ -42,7 +42,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.p_BarraTitulo = new System.Windows.Forms.Panel();
             this.btn_Cerrrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Factura = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
@@ -65,7 +65,8 @@
             this.lbl_TotalImporte = new System.Windows.Forms.Label();
             this.lbl_TotalIVA = new System.Windows.Forms.Label();
             this.lbl_SubTotal = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.p_BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Factura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Fecha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Lista)).BeginInit();
@@ -80,16 +81,16 @@
             this.Elipse_Form.ElipseRadius = 15;
             this.Elipse_Form.TargetControl = this;
             // 
-            // panel1
+            // p_BarraTitulo
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.panel1.Controls.Add(this.btn_Cerrrar);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(707, 30);
-            this.panel1.TabIndex = 0;
+            this.p_BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.p_BarraTitulo.Controls.Add(this.btn_Cerrrar);
+            this.p_BarraTitulo.Controls.Add(this.label1);
+            this.p_BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.p_BarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.p_BarraTitulo.Name = "p_BarraTitulo";
+            this.p_BarraTitulo.Size = new System.Drawing.Size(707, 30);
+            this.p_BarraTitulo.TabIndex = 6;
             // 
             // btn_Cerrrar
             // 
@@ -141,7 +142,7 @@
             this.txt_Factura.Location = new System.Drawing.Point(15, 49);
             this.txt_Factura.Name = "txt_Factura";
             this.txt_Factura.Size = new System.Drawing.Size(180, 30);
-            this.txt_Factura.TabIndex = 1;
+            this.txt_Factura.TabIndex = 0;
             this.txt_Factura.ValidationStyle.PasswordChar = '\0';
             this.txt_Factura.Value = "";
             this.txt_Factura.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -171,7 +172,7 @@
             this.txt_Fecha.Location = new System.Drawing.Point(243, 49);
             this.txt_Fecha.Name = "txt_Fecha";
             this.txt_Fecha.Size = new System.Drawing.Size(180, 30);
-            this.txt_Fecha.TabIndex = 5;
+            this.txt_Fecha.TabIndex = 1;
             this.txt_Fecha.ValidationStyle.MaskValidationStyle.Mask = "00/00/0000";
             this.txt_Fecha.ValidationStyle.PasswordChar = '\0';
             this.txt_Fecha.ValidationStyle.ValidationType = Klik.Windows.Forms.v1.EntryLib.ValidationTypes.DateTime;
@@ -238,7 +239,7 @@
             this.dgv_Lista.RowTemplate.Height = 25;
             this.dgv_Lista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Lista.Size = new System.Drawing.Size(678, 188);
-            this.dgv_Lista.TabIndex = 6;
+            this.dgv_Lista.TabIndex = 3;
             this.dgv_Lista.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Lista_CellValueChanged);
             this.dgv_Lista.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgv_Lista_KeyDown);
             // 
@@ -329,7 +330,7 @@
             this.txt_Proveedor.Location = new System.Drawing.Point(15, 99);
             this.txt_Proveedor.Name = "txt_Proveedor";
             this.txt_Proveedor.Size = new System.Drawing.Size(294, 30);
-            this.txt_Proveedor.TabIndex = 7;
+            this.txt_Proveedor.TabIndex = 2;
             this.txt_Proveedor.ValidationStyle.PasswordChar = '\0';
             this.txt_Proveedor.Value = "";
             this.txt_Proveedor.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -355,7 +356,7 @@
             this.btn_Aceptar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.Navy;
             this.btn_Aceptar.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.Navy;
             this.btn_Aceptar.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.White;
-            this.btn_Aceptar.TabIndex = 8;
+            this.btn_Aceptar.TabIndex = 4;
             this.btn_Aceptar.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Aceptar.TextStyle.Text = "Aceptar";
             this.btn_Aceptar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -382,7 +383,7 @@
             this.btn_Cancelar.StateStyles.HoverStyle.BackgroundSolidColor = System.Drawing.Color.Maroon;
             this.btn_Cancelar.StateStyles.HoverStyle.BorderSolidColor = System.Drawing.Color.Maroon;
             this.btn_Cancelar.StateStyles.HoverStyle.TextForeColor = System.Drawing.Color.White;
-            this.btn_Cancelar.TabIndex = 9;
+            this.btn_Cancelar.TabIndex = 5;
             this.btn_Cancelar.TextStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancelar.TextStyle.Text = "Cancelar";
             this.btn_Cancelar.TextStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -464,6 +465,13 @@
             this.lbl_SubTotal.Text = "0.00";
             this.lbl_SubTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.p_BarraTitulo;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // frm_NuevaCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,14 +484,14 @@
             this.Controls.Add(this.txt_Proveedor);
             this.Controls.Add(this.txt_Fecha);
             this.Controls.Add(this.txt_Factura);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.p_BarraTitulo);
             this.Controls.Add(this.dgv_Lista);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_NuevaCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_NuevaCompra";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.p_BarraTitulo.ResumeLayout(false);
+            this.p_BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Factura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Fecha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Lista)).EndInit();
@@ -498,7 +506,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse Elipse_Form;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel p_BarraTitulo;
         private System.Windows.Forms.Button btn_Cerrrar;
         private System.Windows.Forms.Label label1;
         private Klik.Windows.Forms.v1.EntryLib.ELEntryBox txt_Fecha;
@@ -521,5 +529,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
