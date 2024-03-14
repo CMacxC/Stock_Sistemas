@@ -88,7 +88,11 @@ namespace Stock_Sistemas
 
                     if(mdg == DialogResult.Yes)
                     {
-
+                        if(new Productos() { Id_Producto = Convert.ToInt32(dgv_Productos.CurrentRow.Cells[0].Value)}.Delete() > 0)
+                        {
+                            MessageBox.Show("Registro borrado.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            cargarTabla();
+                        }
                     }
                     break;
             }
