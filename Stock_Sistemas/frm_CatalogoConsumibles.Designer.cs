@@ -34,18 +34,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.p_BarraTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Cerrar = new System.Windows.Forms.Button();
             this.Elipse_Form = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txt_Buscar = new Klik.Windows.Forms.v1.EntryLib.ELEntryBox();
             this.dgv_Consumibles = new System.Windows.Forms.DataGridView();
-            this.DMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idProductoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.p_BarraTitulo.SuspendLayout();
@@ -63,7 +63,7 @@
             this.p_BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.p_BarraTitulo.Name = "p_BarraTitulo";
             this.p_BarraTitulo.Size = new System.Drawing.Size(369, 30);
-            this.p_BarraTitulo.TabIndex = 0;
+            this.p_BarraTitulo.TabIndex = 2;
             // 
             // label1
             // 
@@ -122,7 +122,7 @@
             this.txt_Buscar.Location = new System.Drawing.Point(12, 49);
             this.txt_Buscar.Name = "txt_Buscar";
             this.txt_Buscar.Size = new System.Drawing.Size(260, 30);
-            this.txt_Buscar.TabIndex = 1;
+            this.txt_Buscar.TabIndex = 0;
             this.txt_Buscar.ValidationStyle.PasswordChar = '\0';
             this.txt_Buscar.Value = "";
             this.txt_Buscar.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -185,17 +185,8 @@
             this.dgv_Consumibles.RowTemplate.Height = 25;
             this.dgv_Consumibles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Consumibles.Size = new System.Drawing.Size(345, 191);
-            this.dgv_Consumibles.TabIndex = 2;
+            this.dgv_Consumibles.TabIndex = 1;
             this.dgv_Consumibles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Consumibles_CellContentClick);
-            // 
-            // DMarca
-            // 
-            this.DMarca.DataPropertyName = "DMarca";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.DMarca.DefaultCellStyle = dataGridViewCellStyle5;
-            this.DMarca.HeaderText = "Marca";
-            this.DMarca.Name = "DMarca";
-            this.DMarca.ReadOnly = true;
             // 
             // idProductoDataGridViewTextBoxColumn
             // 
@@ -216,6 +207,15 @@
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
             this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
             this.nombreDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // DMarca
+            // 
+            this.DMarca.DataPropertyName = "DMarca";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.DMarca.DefaultCellStyle = dataGridViewCellStyle5;
+            this.DMarca.HeaderText = "Marca";
+            this.DMarca.Name = "DMarca";
+            this.DMarca.ReadOnly = true;
             // 
             // productosBindingSource
             // 

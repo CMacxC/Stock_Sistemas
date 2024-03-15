@@ -63,7 +63,7 @@
             this.p_BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.p_BarraTitulo.Name = "p_BarraTitulo";
             this.p_BarraTitulo.Size = new System.Drawing.Size(305, 30);
-            this.p_BarraTitulo.TabIndex = 0;
+            this.p_BarraTitulo.TabIndex = 2;
             // 
             // btn_Cerrar
             // 
@@ -134,7 +134,7 @@
             this.txt_Buscar.Location = new System.Drawing.Point(15, 52);
             this.txt_Buscar.Name = "txt_Buscar";
             this.txt_Buscar.Size = new System.Drawing.Size(273, 30);
-            this.txt_Buscar.TabIndex = 1;
+            this.txt_Buscar.TabIndex = 0;
             this.txt_Buscar.ValidationStyle.PasswordChar = '\0';
             this.txt_Buscar.Value = "";
             this.txt_Buscar.VisualStyle = Klik.Windows.Forms.v1.Common.ControlVisualStyles.Custom;
@@ -198,7 +198,7 @@
             this.dgv_Marcas.RowTemplate.Height = 25;
             this.dgv_Marcas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Marcas.Size = new System.Drawing.Size(273, 150);
-            this.dgv_Marcas.TabIndex = 2;
+            this.dgv_Marcas.TabIndex = 1;
             this.dgv_Marcas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Marcas_CellContentClick);
             // 
             // idMarcaDataGridViewTextBoxColumn

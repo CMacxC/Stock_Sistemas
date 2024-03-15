@@ -4,7 +4,7 @@
     <PublishUrlHistory>\\192.168.6.14\general\sistemas\Ejecutable Avances\Almacen_Sistemas\|publish\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory />
-    <UpdateUrlHistory />
+    <UpdateUrlHistory>\\192.168.6.14\general\sistemas\Ejecutable Avances\Almacen_Sistemas\</UpdateUrlHistory>
     <BootstrapperUrlHistory />
     <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>
