@@ -56,3 +56,4 @@ C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\S
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\bin\Debug\Stock_Sistemas.application
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.exe.manifest
 C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.application
+C:\Users\siste\Documents\Proyectos\Sln_Stock_Sistemas\Stock_Sistemas\obj\Debug\Stock_Sistemas.frm_InventarioEquipos.resources

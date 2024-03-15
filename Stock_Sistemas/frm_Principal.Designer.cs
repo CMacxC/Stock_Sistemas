@@ -113,10 +113,11 @@
             this.btn_Equipos.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Equipos.Size = new System.Drawing.Size(220, 50);
             this.btn_Equipos.TabIndex = 6;
-            this.btn_Equipos.Text = "Reportes";
+            this.btn_Equipos.Text = "Equipo de computo";
             this.btn_Equipos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Equipos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Equipos.UseVisualStyleBackColor = true;
+            this.btn_Equipos.Click += new System.EventHandler(this.btn_Equipos_Click);
             // 
             // btn_Materiales
             // 
