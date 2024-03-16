@@ -35,7 +35,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Cerrar = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.dgv_Inventario = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.p_BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Inventario)).BeginInit();
             this.SuspendLayout();
             // 
             // Elipse_Form
@@ -78,6 +81,7 @@
             this.btn_Cerrar.Size = new System.Drawing.Size(30, 30);
             this.btn_Cerrar.TabIndex = 1;
             this.btn_Cerrar.UseVisualStyleBackColor = true;
+            this.btn_Cerrar.Click += new System.EventHandler(this.btn_Cerrar_Click);
             // 
             // bunifuDragControl1
             // 
@@ -86,12 +90,38 @@
             this.bunifuDragControl1.TargetControl = this.p_BarraTitulo;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // dgv_Inventario
+            // 
+            this.dgv_Inventario.AllowUserToAddRows = false;
+            this.dgv_Inventario.AllowUserToDeleteRows = false;
+            this.dgv_Inventario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Inventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Inventario.Location = new System.Drawing.Point(10, 150);
+            this.dgv_Inventario.Name = "dgv_Inventario";
+            this.dgv_Inventario.ReadOnly = true;
+            this.dgv_Inventario.Size = new System.Drawing.Size(775, 285);
+            this.dgv_Inventario.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Location = new System.Drawing.Point(10, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(775, 100);
+            this.panel1.TabIndex = 2;
+            // 
             // frm_InventarioEquipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(795, 452);
+            this.ClientSize = new System.Drawing.Size(795, 450);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dgv_Inventario);
             this.Controls.Add(this.p_BarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_InventarioEquipos";
@@ -99,6 +129,7 @@
             this.Text = "Inventario Computo";
             this.p_BarraTitulo.ResumeLayout(false);
             this.p_BarraTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Inventario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -110,5 +141,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Cerrar;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.DataGridView dgv_Inventario;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -99,8 +99,12 @@ namespace Stock_Sistemas
             base.WndProc(ref m);
             if (m.Msg == WM_NCHITTEST && (int)m.Result == HTCLIENT) m.Result = (IntPtr)HTCAPTION;
         }
+
         #endregion
 
-
+        private void btn_Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

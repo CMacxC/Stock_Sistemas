@@ -247,14 +247,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Stock_Sistemas.exe" size="585728">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Stock_Sistemas.exe" size="586240">
       <assemblyIdentity name="Stock_Sistemas" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zNhOpVaWDnR1N7Qj2oqgIQkfKNM2qqWcPEwupqqlsOw=</dsig:DigestValue>
+        <dsig:DigestValue>/3qXzYWAE8dp3UOQ7/U0j0/r7Wduc8VdZnxBEi2z0+U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
